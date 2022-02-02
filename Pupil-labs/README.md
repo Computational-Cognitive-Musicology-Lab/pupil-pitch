@@ -1,2 +1,2 @@
-# PupilPitch
-Pitch discrimination experiment with Pupil Labs pupil core
+# Pupil Labs
+Notebooks for communicating with Pupil-core and post processing of the recorded data.
