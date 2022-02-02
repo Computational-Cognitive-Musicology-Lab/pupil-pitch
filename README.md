@@ -16,7 +16,7 @@ https://www.psychopy.org/download.html
 https://docs.pupil-labs.com/core/
 
 ### Pupil Labs integration
-Python scripts with examples to integrate Psychopy functionality and pupil-labs software can be found in the `Pupil Labs` folder of this repository.
+Python scripts with examples to integrate Psychopy functionality and pupil-labs software can be found in the `Pupil-labs` folder of this repository.
 
 ### Things to keep in mind
 - Ensure the pupil capture software is open and running before running an experiment
