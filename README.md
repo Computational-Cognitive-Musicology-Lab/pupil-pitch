@@ -5,14 +5,14 @@ This repository holds code and resources for a replication study conducted to us
  
  ### Requirements
  To run this experiment kindly ensure:
-- **1.**  You have Python 3.7+ and ensure all the dependencies in `requirements.txt` are satisfied 
+-   You have Python 3.7+ and ensure all the dependencies in `requirements.txt` are satisfied 
  ```python
  cd pupil-pitch
 pip install -r requirements.txt
 ```
-- **2.**  You have downloaded and compiled the Standalone GUI for PsychoPy from:
+-  You have downloaded and compiled the Standalone GUI for PsychoPy from:
 https://www.psychopy.org/download.html
-- **3.** Download the Pupil Core softwares (Pupil Player and Pupil Capture) and follow basic setup:
+-  Download the Pupil Core softwares (Pupil Player and Pupil Capture) and follow basic setup:
 https://docs.pupil-labs.com/core/
 
 ### Pupil Labs integration
