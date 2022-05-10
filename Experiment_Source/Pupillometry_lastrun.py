@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.1.2),
-    on Tue May 10 15:29:11 2022
+    on Tue May 10 15:57:57 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -24,7 +24,6 @@ from numpy.random import random, randint, normal, shuffle, choice as randchoice
 import os  # handy system and path functions
 import sys  # to get file system encoding
 
-import psychopy.iohub as io
 from psychopy.hardware import keyboard
 
 import random, xlrd
@@ -86,18 +85,10 @@ else:
     frameDur = 1.0 / 60.0  # could not measure, so guess
 # Setup ioHub
 ioConfig = {}
-
-# Setup iohub keyboard
-ioConfig['Keyboard'] = dict(use_keymap='psychopy')
-
-ioSession = '1'
-if 'session' in expInfo:
-    ioSession = str(expInfo['session'])
-ioServer = io.launchHubServer(window=win, **ioConfig)
-eyetracker = None
+ioSession = ioServer = eyetracker = None
 
 # create a default keyboard (e.g. to check for escape)
-defaultKeyboard = keyboard.Keyboard(backend='iohub')
+defaultKeyboard = keyboard.Keyboard(backend='ptb')
 
 # Initialize components for Routine "init_code"
 init_codeClock = core.Clock()
@@ -145,19 +136,10 @@ with open(file_name2, 'wb') as f:
 
 
 
-# Initialize components for Routine "calibrate"
-calibrateClock = core.Clock()
-polygon_31 = visual.ShapeStim(
-    win=win, name='polygon_31', vertices='cross',
-    size=(0.1, 0.1),
-    ori=0.0, pos=(0, 0), anchor='center',
-    lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
-    opacity=None, depth=0.0, interpolate=True)
-
 # Initialize components for Routine "Introduction"
 IntroductionClock = core.Clock()
 text_6 = visual.TextStim(win=win, name='text_6',
-    text='Hello and Welcome!\n\nThis study aims to replicate an oft-cited experiment from 1967 (Hahnemann & Beatty, 1967) but using modern pupillometry hardware and software. \n\nThis study has been reviewed by the Georgia Tech Institutional Review Board (IRB), and has been identified as “Minimal risk research under 45 CFR 46. (Protocol 21153). This study contains neither any personal benefits nor any known risks to you.\n\nThe experiment should take approximately 15 - 20 minutes to complete. Your participation is extremely valuable to us and we thank you for taking the time to help us.\n\nPlease click “CONTINUE” to read the full instructions.\n',
+    text='Hello and Welcome!\n\nThis study aims to replicate an oft-cited experiment from 1967 (Hahnemann & Beatty, 1967) but using modern pupillometry hardware and software. \n\nThis study has been reviewed by the Georgia Tech Institutional Review Board (IRB), and has been identified as “Minimal risk research under 45 CFR 46. (Protocol 21153). This study contains neither any personal benefits nor any known risks to you.\n\nThe experiment should take approximately 15 - 20 minutes to complete. Your participation is extremely valuable to us and we thank you for taking the time to help us.\n\nPlease press the spacebar to read the full instructions.\n',
     font='Open Sans',
     pos=(0, 0.15), height=0.03, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -177,6 +159,7 @@ button_2 = visual.ButtonStim(win,
     name='button_2'
 )
 button_2.buttonClock = core.Clock()
+key_resp_11 = keyboard.Keyboard()
 
 # Initialize components for Routine "hello"
 helloClock = core.Clock()
@@ -211,6 +194,7 @@ button = visual.ButtonStim(win,
     name='button'
 )
 button.buttonClock = core.Clock()
+key_resp_12 = keyboard.Keyboard()
 
 # Initialize components for Routine "Intro_contd"
 Intro_contdClock = core.Clock()
@@ -241,7 +225,7 @@ polygon_26 = visual.ShapeStim(
     ori=0.0, pos=(0, 0), anchor='center',
     lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
     opacity=None, depth=0.0, interpolate=True)
-sound_26 = sound.Sound('Audio/650.0.wav', secs=1.0, stereo=True, hamming=True,
+sound_26 = sound.Sound('Audio/650.o.wav', secs=1.0, stereo=True, hamming=True,
     name='sound_26')
 sound_26.setVolume(1.0)
 
@@ -277,7 +261,7 @@ polygon_29 = visual.ShapeStim(
     ori=0.0, pos=(0, 0), anchor='center',
     lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
     opacity=None, depth=0.0, interpolate=True)
-sound_29 = sound.Sound('Audio/650.wav', secs=1.0, stereo=True, hamming=True,
+sound_29 = sound.Sound('Audio/650.o.wav', secs=1.0, stereo=True, hamming=True,
     name='sound_29')
 sound_29.setVolume(1.0)
 key_resp_10 = keyboard.Keyboard()
@@ -368,7 +352,7 @@ polygon = visual.ShapeStim(
     ori=0.0, pos=(0, 0), anchor='center',
     lineWidth=0.3,     colorSpace='rgb',  lineColor='white', fillColor='white',
     opacity=None, depth=0.0, interpolate=True)
-sound_1 = sound.Sound('Audio/650.0.wav', secs=1.0, stereo=True, hamming=True,
+sound_1 = sound.Sound('Audio/650.o.wav', secs=1.0, stereo=True, hamming=True,
     name='sound_1')
 sound_1.setVolume(1.0)
 import numpy
@@ -406,7 +390,7 @@ polygon_2 = visual.ShapeStim(
     lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
     opacity=None, depth=0.0, interpolate=True)
 key_resp = keyboard.Keyboard()
-sound_4 = sound.Sound('Audio/650.wav', secs=1.0, stereo=True, hamming=True,
+sound_4 = sound.Sound('Audio/650.o.wav', secs=1.0, stereo=True, hamming=True,
     name='sound_4')
 sound_4.setVolume(1.0)
 
@@ -457,7 +441,7 @@ polygon_6 = visual.ShapeStim(
     ori=0.0, pos=(0, 0), anchor='center',
     lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
     opacity=None, depth=0.0, interpolate=True)
-sound_6 = sound.Sound('Audio/650.0.wav', secs=1.0, stereo=True, hamming=True,
+sound_6 = sound.Sound('Audio/650.o.wav', secs=1.0, stereo=True, hamming=True,
     name='sound_6')
 sound_6.setVolume(1.0)
 
@@ -494,7 +478,7 @@ polygon_9 = visual.ShapeStim(
     lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
     opacity=None, depth=0.0, interpolate=True)
 key_resp_4 = keyboard.Keyboard()
-sound_9 = sound.Sound('Audio/650.wav', secs=1.0, stereo=True, hamming=True,
+sound_9 = sound.Sound('Audio/650.o.wav', secs=1.0, stereo=True, hamming=True,
     name='sound_9')
 sound_9.setVolume(1.0)
 
@@ -544,7 +528,7 @@ polygon_10 = visual.ShapeStim(
     ori=0.0, pos=(0, 0), anchor='center',
     lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
     opacity=None, depth=0.0, interpolate=True)
-sound_10 = sound.Sound('Audio/650.0.wav', secs=1.0, stereo=True, hamming=True,
+sound_10 = sound.Sound('Audio/650.o.wav', secs=1.0, stereo=True, hamming=True,
     name='sound_10')
 sound_10.setVolume(1.0)
 
@@ -581,7 +565,7 @@ polygon_13 = visual.ShapeStim(
     lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
     opacity=None, depth=0.0, interpolate=True)
 key_resp_5 = keyboard.Keyboard()
-sound_13 = sound.Sound('Audio/650.wav', secs=1.0, stereo=True, hamming=True,
+sound_13 = sound.Sound('Audio/650.o.wav', secs=1.0, stereo=True, hamming=True,
     name='sound_13')
 sound_13.setVolume(1.0)
 
@@ -631,7 +615,7 @@ polygon_14 = visual.ShapeStim(
     ori=0.0, pos=(0, 0), anchor='center',
     lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
     opacity=None, depth=0.0, interpolate=True)
-sound_14 = sound.Sound('Audio/650.0.wav', secs=1.0, stereo=True, hamming=True,
+sound_14 = sound.Sound('Audio/650.o.wav', secs=1.0, stereo=True, hamming=True,
     name='sound_14')
 sound_14.setVolume(0.8)
 
@@ -661,7 +645,7 @@ sound_16.setVolume(1.0)
 
 # Initialize components for Routine "End_tone4"
 End_tone4Clock = core.Clock()
-sound_17 = sound.Sound('Audio/650.wav', secs=1.0, stereo=True, hamming=True,
+sound_17 = sound.Sound('Audio/650.o.wav', secs=1.0, stereo=True, hamming=True,
     name='sound_17')
 sound_17.setVolume(1.0)
 polygon_17 = visual.ShapeStim(
@@ -719,7 +703,7 @@ polygon_19 = visual.ShapeStim(
     ori=0.0, pos=(0, 0), anchor='center',
     lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
     opacity=None, depth=0.0, interpolate=True)
-sound_19 = sound.Sound('Audio/650.wav', secs=1.0, stereo=True, hamming=True,
+sound_19 = sound.Sound('Audio/650.o.wav', secs=1.0, stereo=True, hamming=True,
     name='sound_19')
 sound_19.setVolume(1.0)
 
@@ -755,7 +739,7 @@ polygon_22 = visual.ShapeStim(
     ori=0.0, pos=(0, 0), anchor='center',
     lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
     opacity=None, depth=0.0, interpolate=True)
-sound_22 = sound.Sound('Audio/650.wav', secs=1.0, stereo=True, hamming=True,
+sound_22 = sound.Sound('Audio/650.o.wav', secs=1.0, stereo=True, hamming=True,
     name='sound_22')
 sound_22.setVolume(1.0)
 key_resp_7 = keyboard.Keyboard()
@@ -841,80 +825,14 @@ for thisComponent in init_codeComponents:
 # the Routine "init_code" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# ------Prepare to start Routine "calibrate"-------
-continueRoutine = True
-routineTimer.add(5.000000)
-# update component parameters for each repeat
-# keep track of which components have finished
-calibrateComponents = [polygon_31]
-for thisComponent in calibrateComponents:
-    thisComponent.tStart = None
-    thisComponent.tStop = None
-    thisComponent.tStartRefresh = None
-    thisComponent.tStopRefresh = None
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-# reset timers
-t = 0
-_timeToFirstFrame = win.getFutureFlipTime(clock="now")
-calibrateClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-frameN = -1
-
-# -------Run Routine "calibrate"-------
-while continueRoutine and routineTimer.getTime() > 0:
-    # get current time
-    t = calibrateClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=calibrateClock)
-    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *polygon_31* updates
-    if polygon_31.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        polygon_31.frameNStart = frameN  # exact frame index
-        polygon_31.tStart = t  # local t and not account for scr refresh
-        polygon_31.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(polygon_31, 'tStartRefresh')  # time at next scr refresh
-        polygon_31.setAutoDraw(True)
-    if polygon_31.status == STARTED:
-        # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > polygon_31.tStartRefresh + 5-frameTolerance:
-            # keep track of stop time/frame for later
-            polygon_31.tStop = t  # not accounting for scr refresh
-            polygon_31.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(polygon_31, 'tStopRefresh')  # time at next scr refresh
-            polygon_31.setAutoDraw(False)
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in calibrateComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "calibrate"-------
-for thisComponent in calibrateComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-thisExp.addData('polygon_31.started', polygon_31.tStartRefresh)
-thisExp.addData('polygon_31.stopped', polygon_31.tStopRefresh)
-
 # ------Prepare to start Routine "Introduction"-------
 continueRoutine = True
 # update component parameters for each repeat
+key_resp_11.keys = []
+key_resp_11.rt = []
+_key_resp_11_allKeys = []
 # keep track of which components have finished
-IntroductionComponents = [text_6, button_2]
+IntroductionComponents = [text_6, button_2, key_resp_11]
 for thisComponent in IntroductionComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -971,6 +889,28 @@ while continueRoutine:
     else:
         button_2.wasClicked = False  # if button_2 is clicked next frame, it is a new click
     
+    # *key_resp_11* updates
+    waitOnFlip = False
+    if key_resp_11.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_11.frameNStart = frameN  # exact frame index
+        key_resp_11.tStart = t  # local t and not account for scr refresh
+        key_resp_11.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_11, 'tStartRefresh')  # time at next scr refresh
+        key_resp_11.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_11.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_11.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_11.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_11.getKeys(keyList=['space'], waitRelease=False)
+        _key_resp_11_allKeys.extend(theseKeys)
+        if len(_key_resp_11_allKeys):
+            key_resp_11.keys = _key_resp_11_allKeys[-1].name  # just the last key pressed
+            key_resp_11.rt = _key_resp_11_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
         core.quit()
@@ -1003,6 +943,15 @@ if button_2.numClicks:
 else:
    thisExp.addData('button_2.timesOn', "")
    thisExp.addData('button_2.timesOff', "")
+# check responses
+if key_resp_11.keys in ['', [], None]:  # No response was made
+    key_resp_11.keys = None
+thisExp.addData('key_resp_11.keys',key_resp_11.keys)
+if key_resp_11.keys != None:  # we had a response
+    thisExp.addData('key_resp_11.rt', key_resp_11.rt)
+thisExp.addData('key_resp_11.started', key_resp_11.tStartRefresh)
+thisExp.addData('key_resp_11.stopped', key_resp_11.tStopRefresh)
+thisExp.nextEntry()
 # the Routine "Introduction" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
@@ -1078,8 +1027,11 @@ thisExp.addData('text_8.stopped', text_8.tStopRefresh)
 # ------Prepare to start Routine "Consent_form"-------
 continueRoutine = True
 # update component parameters for each repeat
+key_resp_12.keys = []
+key_resp_12.rt = []
+_key_resp_12_allKeys = []
 # keep track of which components have finished
-Consent_formComponents = [text_4, button]
+Consent_formComponents = [text_4, button, key_resp_12]
 for thisComponent in Consent_formComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -1136,6 +1088,28 @@ while continueRoutine:
     else:
         button.wasClicked = False  # if button is clicked next frame, it is a new click
     
+    # *key_resp_12* updates
+    waitOnFlip = False
+    if key_resp_12.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_12.frameNStart = frameN  # exact frame index
+        key_resp_12.tStart = t  # local t and not account for scr refresh
+        key_resp_12.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_12, 'tStartRefresh')  # time at next scr refresh
+        key_resp_12.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_12.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_12.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_12.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_12.getKeys(keyList=['space'], waitRelease=False)
+        _key_resp_12_allKeys.extend(theseKeys)
+        if len(_key_resp_12_allKeys):
+            key_resp_12.keys = _key_resp_12_allKeys[-1].name  # just the last key pressed
+            key_resp_12.rt = _key_resp_12_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
         core.quit()
@@ -1168,6 +1142,15 @@ if button.numClicks:
 else:
    thisExp.addData('button.timesOn', "")
    thisExp.addData('button.timesOff', "")
+# check responses
+if key_resp_12.keys in ['', [], None]:  # No response was made
+    key_resp_12.keys = None
+thisExp.addData('key_resp_12.keys',key_resp_12.keys)
+if key_resp_12.keys != None:  # we had a response
+    thisExp.addData('key_resp_12.rt', key_resp_12.rt)
+thisExp.addData('key_resp_12.started', key_resp_12.tStartRefresh)
+thisExp.addData('key_resp_12.stopped', key_resp_12.tStopRefresh)
+thisExp.nextEntry()
 # the Routine "Consent_form" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
@@ -1321,7 +1304,7 @@ for thisTrial_6 in trials_6:
     continueRoutine = True
     routineTimer.add(5.000000)
     # update component parameters for each repeat
-    sound_26.setSound('Audio/650.0.wav', secs=1.0, hamming=True)
+    sound_26.setSound('Audio/650.o.wav', secs=1.0, hamming=True)
     sound_26.setVolume(1.0, log=False)
     # keep track of which components have finished
     Ready_practiceComponents = [polygon_26, sound_26]
@@ -1589,7 +1572,7 @@ for thisTrial_6 in trials_6:
     # ------Prepare to start Routine "End_tonepractice"-------
     continueRoutine = True
     # update component parameters for each repeat
-    sound_29.setSound('Audio/650.wav', secs=1.0, hamming=True)
+    sound_29.setSound('Audio/650.o.wav', secs=1.0, hamming=True)
     sound_29.setVolume(1.0, log=False)
     key_resp_10.keys = []
     key_resp_10.rt = []
@@ -2079,7 +2062,7 @@ for thisTrial in trials:
     # ------Prepare to start Routine "Ready_tone"-------
     continueRoutine = True
     # update component parameters for each repeat
-    sound_1.setSound('Audio/650.0.wav', secs=1.0, hamming=True)
+    sound_1.setSound('Audio/650.o.wav', secs=1.0, hamming=True)
     sound_1.setVolume(1.0, log=False)
     wait_ready = np.random.choice(np.arange(2,7),1)[0]
     time_fn = core.monotonicClock.getTime
@@ -2379,7 +2362,7 @@ for thisTrial in trials:
     key_resp.keys = []
     key_resp.rt = []
     _key_resp_allKeys = []
-    sound_4.setSound('Audio/650.wav', secs=1.0, hamming=True)
+    sound_4.setSound('Audio/650.o.wav', secs=1.0, hamming=True)
     sound_4.setVolume(1.0, log=False)
     
     
@@ -2937,7 +2920,7 @@ for thisTrial_2 in trials_2:
     minimal_trigger = new_trigger(label, duration)
     send_trigger(minimal_trigger)
     sleep(1.)
-    sound_6.setSound('Audio/650.0.wav', secs=1.0, hamming=True)
+    sound_6.setSound('Audio/650.o.wav', secs=1.0, hamming=True)
     sound_6.setVolume(1.0, log=False)
     # keep track of which components have finished
     Ready_tone2_2Components = [polygon_6, sound_6]
@@ -3229,7 +3212,7 @@ for thisTrial_2 in trials_2:
     key_resp_4.keys = []
     key_resp_4.rt = []
     _key_resp_4_allKeys = []
-    sound_9.setSound('Audio/650.wav', secs=1.0, hamming=True)
+    sound_9.setSound('Audio/650.o.wav', secs=1.0, hamming=True)
     sound_9.setVolume(1.0, log=False)
     
     
@@ -3786,7 +3769,7 @@ for thisTrial_3 in trials_3:
     minimal_trigger = new_trigger(label, duration)
     send_trigger(minimal_trigger)
     sleep(1.)
-    sound_10.setSound('Audio/650.0.wav', secs=1.0, hamming=True)
+    sound_10.setSound('Audio/650.o.wav', secs=1.0, hamming=True)
     sound_10.setVolume(1.0, log=False)
     # keep track of which components have finished
     Ready_tone3Components = [polygon_10, sound_10]
@@ -4082,7 +4065,7 @@ for thisTrial_3 in trials_3:
     minimal_trigger = new_trigger(label, duration)
     send_trigger(minimal_trigger)
     sleep(1.)
-    sound_13.setSound('Audio/650.wav', secs=1.0, hamming=True)
+    sound_13.setSound('Audio/650.o.wav', secs=1.0, hamming=True)
     sound_13.setVolume(1.0, log=False)
     # keep track of which components have finished
     End_tone3Components = [polygon_13, key_resp_5, sound_13]
@@ -4625,7 +4608,7 @@ for thisTrial_4 in trials_4:
     # ------Prepare to start Routine "Ready_Tone4"-------
     continueRoutine = True
     # update component parameters for each repeat
-    sound_14.setSound('Audio/650.0.wav', secs=1.0, hamming=True)
+    sound_14.setSound('Audio/650.o.wav', secs=1.0, hamming=True)
     sound_14.setVolume(0.8, log=False)
     wait_ready = np.random.choice(np.arange(2,7),1)[0]
     time_fn = core.monotonicClock.getTime
@@ -4922,7 +4905,7 @@ for thisTrial_4 in trials_4:
     minimal_trigger = new_trigger(label, duration)
     send_trigger(minimal_trigger)
     sleep(1.)
-    sound_17.setSound('Audio/650.wav', secs=1.0, hamming=True)
+    sound_17.setSound('Audio/650.o.wav', secs=1.0, hamming=True)
     sound_17.setVolume(1.0, log=False)
     key_resp_6.keys = []
     key_resp_6.rt = []
@@ -5473,7 +5456,7 @@ for thisTrial_5 in trials_5:
     # ------Prepare to start Routine "Ready_tone5"-------
     continueRoutine = True
     # update component parameters for each repeat
-    sound_19.setSound('Audio/650.wav', secs=1.0, hamming=True)
+    sound_19.setSound('Audio/650.o.wav', secs=1.0, hamming=True)
     sound_19.setVolume(1.0, log=False)
     wait_ready = np.random.choice(np.arange(2,7),1)[0]
     time_fn = core.monotonicClock.getTime
@@ -5770,7 +5753,7 @@ for thisTrial_5 in trials_5:
     minimal_trigger = new_trigger(label, duration)
     send_trigger(minimal_trigger)
     sleep(1.)
-    sound_22.setSound('Audio/650.wav', secs=1.0, hamming=True)
+    sound_22.setSound('Audio/650.o.wav', secs=1.0, hamming=True)
     sound_22.setVolume(1.0, log=False)
     key_resp_7.keys = []
     key_resp_7.rt = []
