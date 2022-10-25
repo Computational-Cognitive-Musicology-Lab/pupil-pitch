@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.1.2),
-    on Tue Oct 25 17:20:12 2022
+    on Tue Oct 25 17:27:29 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -58,7 +58,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/cmml/github/pupil-pitch/Experiment_Source/Pupillometry_lastrun.py',
+    originPath='/Users/cmml/github/pupil-pitch/Experiment_Source/Pupillometry_test_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -146,7 +146,7 @@ text_6 = visual.TextStim(win=win, name='text_6',
     languageStyle='LTR',
     depth=0.0);
 button_2 = visual.ButtonStim(win, 
-    text='CONTINUE', font='Arvo',
+    text='Press space to CONTINUE', font='Arvo',
     pos=(0, -0.3),
     letterHeight=0.1,
     size=[0.7,0.2], borderWidth=0.0,
@@ -292,6 +292,15 @@ key_resp_2 = keyboard.Keyboard()
 eyetracking='1'
 
 
+# Initialize components for Routine "calibrate"
+calibrateClock = core.Clock()
+polygon_31 = visual.ShapeStim(
+    win=win, name='polygon_31', vertices='cross',
+    size=(0.1, 0.1),
+    ori=0.0, pos=(0, 0), anchor='center',
+    lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
+    opacity=None, depth=0.0, interpolate=True)
+
 # Initialize components for Routine "Pupil"
 PupilClock = core.Clock()
 import zmq
@@ -333,16 +342,8 @@ time_fn = core.monotonicClock.getTime
 pupil_remote.send_string("T " + str(time_fn()))
 print(pupil_remote.recv_string())
 sleep(2.)
+rec_count=0
 
-
-# Initialize components for Routine "calibrate"
-calibrateClock = core.Clock()
-polygon_31 = visual.ShapeStim(
-    win=win, name='polygon_31', vertices='cross',
-    size=(0.1, 0.1),
-    ori=0.0, pos=(0, 0), anchor='center',
-    lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
-    opacity=None, depth=0.0, interpolate=True)
 
 # Initialize components for Routine "Ready_tone"
 Ready_toneClock = core.Clock()
@@ -1906,71 +1907,6 @@ thisExp.nextEntry()
 # the Routine "StartWelcome" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# ------Prepare to start Routine "Pupil"-------
-continueRoutine = True
-# update component parameters for each repeat
-if eyetracking == '1':    
-    time_fn = core.monotonicClock.getTime
-    name = expInfo['participant']
-    rstring ='R '+ str(name) 
-    pupil_remote.send_string(rstring)
-    print(pupil_remote.recv_string())
-    sleep(0.25)
-    label = "start_of_experiment"
-    duration = 0.
-    minimal_trigger = new_trigger(label, duration)
-    send_trigger(minimal_trigger)
-    sleep(0.25)
-else:
-    continueRoutine = False
-# keep track of which components have finished
-PupilComponents = []
-for thisComponent in PupilComponents:
-    thisComponent.tStart = None
-    thisComponent.tStop = None
-    thisComponent.tStartRefresh = None
-    thisComponent.tStopRefresh = None
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-# reset timers
-t = 0
-_timeToFirstFrame = win.getFutureFlipTime(clock="now")
-PupilClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-frameN = -1
-
-# -------Run Routine "Pupil"-------
-while continueRoutine:
-    # get current time
-    t = PupilClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=PupilClock)
-    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in PupilComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "Pupil"-------
-for thisComponent in PupilComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-# the Routine "Pupil" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
-
 # ------Prepare to start Routine "calibrate"-------
 continueRoutine = True
 routineTimer.add(5.000000)
@@ -2058,6 +1994,72 @@ for thisTrial in trials:
     if thisTrial != None:
         for paramName in thisTrial:
             exec('{} = thisTrial[paramName]'.format(paramName))
+    
+    # ------Prepare to start Routine "Pupil"-------
+    continueRoutine = True
+    # update component parameters for each repeat
+    if eyetracking == '1':    
+        time_fn = core.monotonicClock.getTime
+        name = expInfo['participant']
+        rstring ='R '+ str(name) +str(rec_count)
+        pupil_remote.send_string(rstring)
+        print(pupil_remote.recv_string())
+        sleep(0.25)
+        label = "start_of_trial" +str(sound_files)
+        duration = 0.
+        minimal_trigger = new_trigger(label, duration)
+        send_trigger(minimal_trigger)
+        sleep(0.25)
+        rec_count=rec_count+1
+    else:
+        continueRoutine = False
+    # keep track of which components have finished
+    PupilComponents = []
+    for thisComponent in PupilComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    PupilClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    
+    # -------Run Routine "Pupil"-------
+    while continueRoutine:
+        # get current time
+        t = PupilClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=PupilClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in PupilComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "Pupil"-------
+    for thisComponent in PupilComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # the Routine "Pupil" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
     # ------Prepare to start Routine "Ready_tone"-------
     continueRoutine = True
@@ -2586,69 +2588,69 @@ for thisTrial in trials:
     trials.addData('sound_5.stopped', sound_5.tStopRefresh)
     # the Routine "feedback_2" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
+    
+    # ------Prepare to start Routine "stop_pupil"-------
+    continueRoutine = True
+    # update component parameters for each repeat
+    time_fn = core.monotonicClock.getTime
+    label = "End_of_Trial"
+    duration = 0.
+    minimal_trigger = new_trigger(label, duration)
+    send_trigger(minimal_trigger)
+    sleep(0.02)
+    pupil_remote.send_string('r')
+    print(pupil_remote.recv_string())
+    # keep track of which components have finished
+    stop_pupilComponents = []
+    for thisComponent in stop_pupilComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    stop_pupilClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    
+    # -------Run Routine "stop_pupil"-------
+    while continueRoutine:
+        # get current time
+        t = stop_pupilClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=stop_pupilClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in stop_pupilComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "stop_pupil"-------
+    for thisComponent in stop_pupilComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # the Routine "stop_pupil" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     thisExp.nextEntry()
     
 # completed 11.0 repeats of 'trials'
 
-
-# ------Prepare to start Routine "stop_pupil"-------
-continueRoutine = True
-# update component parameters for each repeat
-time_fn = core.monotonicClock.getTime
-label = "End_of_Block"
-duration = 0.
-minimal_trigger = new_trigger(label, duration)
-send_trigger(minimal_trigger)
-sleep(2.)
-pupil_remote.send_string('r')
-print(pupil_remote.recv_string())
-# keep track of which components have finished
-stop_pupilComponents = []
-for thisComponent in stop_pupilComponents:
-    thisComponent.tStart = None
-    thisComponent.tStop = None
-    thisComponent.tStartRefresh = None
-    thisComponent.tStopRefresh = None
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-# reset timers
-t = 0
-_timeToFirstFrame = win.getFutureFlipTime(clock="now")
-stop_pupilClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-frameN = -1
-
-# -------Run Routine "stop_pupil"-------
-while continueRoutine:
-    # get current time
-    t = stop_pupilClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=stop_pupilClock)
-    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in stop_pupilComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "stop_pupil"-------
-for thisComponent in stop_pupilComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-# the Routine "stop_pupil" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
 
 # ------Prepare to start Routine "EndBlock"-------
 continueRoutine = True
@@ -3444,11 +3446,11 @@ for thisTrial_2 in trials_2:
 continueRoutine = True
 # update component parameters for each repeat
 time_fn = core.monotonicClock.getTime
-label = "End_of_Block"
+label = "End_of_Trial"
 duration = 0.
 minimal_trigger = new_trigger(label, duration)
 send_trigger(minimal_trigger)
-sleep(2.)
+sleep(0.02)
 pupil_remote.send_string('r')
 print(pupil_remote.recv_string())
 # keep track of which components have finished
@@ -4290,11 +4292,11 @@ for thisTrial_3 in trials_3:
 continueRoutine = True
 # update component parameters for each repeat
 time_fn = core.monotonicClock.getTime
-label = "End_of_Block"
+label = "End_of_Trial"
 duration = 0.
 minimal_trigger = new_trigger(label, duration)
 send_trigger(minimal_trigger)
-sleep(2.)
+sleep(0.02)
 pupil_remote.send_string('r')
 print(pupil_remote.recv_string())
 # keep track of which components have finished
@@ -5138,11 +5140,11 @@ for thisTrial_4 in trials_4:
 continueRoutine = True
 # update component parameters for each repeat
 time_fn = core.monotonicClock.getTime
-label = "End_of_Block"
+label = "End_of_Trial"
 duration = 0.
 minimal_trigger = new_trigger(label, duration)
 send_trigger(minimal_trigger)
-sleep(2.)
+sleep(0.02)
 pupil_remote.send_string('r')
 print(pupil_remote.recv_string())
 # keep track of which components have finished
@@ -5978,11 +5980,11 @@ for thisTrial_5 in trials_5:
 continueRoutine = True
 # update component parameters for each repeat
 time_fn = core.monotonicClock.getTime
-label = "End_of_Block"
+label = "End_of_Trial"
 duration = 0.
 minimal_trigger = new_trigger(label, duration)
 send_trigger(minimal_trigger)
-sleep(2.)
+sleep(0.02)
 pupil_remote.send_string('r')
 print(pupil_remote.recv_string())
 # keep track of which components have finished
