@@ -1,0 +1,94 @@
+1.1021 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+7.7304 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fb819f589d0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fb81a09e340>, multiSample=False, name='window1', numSamples=2, pos=[640.0, 360.0], screen=0, size=array([5120, 2880]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.7305 	EXP 	window1: mouseVisible = True
+7.7305 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+7.7305 	EXP 	window1: recordFrameIntervals = False
+7.8967 	EXP 	window1: recordFrameIntervals = True
+8.0802 	EXP 	Screen (0) actual frame rate measured at 60.01Hz
+8.0802 	EXP 	window1: recordFrameIntervals = False
+9.6835 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.029999999999999995, italic=False, languageStyle='LTR', name='text_7', opacity=1, ori=0.0, pos=array([0.  , 0.15]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.3189 	EXP 	Sound sound_31 set volume 1.000
+10.3333 	EXP 	Created text_10 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.029999999999999995, italic=False, languageStyle='LTR', name='text_10', opacity=1, ori=0.0, pos=array([ 0.  , -0.15]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.3361 	EXP 	Created polygon_26 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_26', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+10.3396 	EXP 	Sound sound_26 set volume 1.000
+10.3417 	EXP 	Created polygon_27 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_27', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+10.3424 	EXP 	Sound sound_27 set volume 1.000
+10.3445 	EXP 	Created polygon_28 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_28', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+10.3446 	EXP 	Sound sound_28 set volume 1.000
+10.3466 	EXP 	Created polygon_29 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_29', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+10.3470 	EXP 	Sound sound_29 set volume 1.000
+10.5663 	EXP 	Created polygon_30 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_30', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+10.5663 	EXP 	Sound sound_30 set volume 1.000
+10.5676 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.7939 	EXP 	text_7: autoDraw = True
+10.7939 	EXP 	text_10: autoDraw = True
+26.4865 	EXP 	Created sequence: random, trialTypes=1, nReps=4, seed=None
+26.4867 	EXP 	New trial (rep=0, index=0): None
+26.5002 	DATA 	Keypress: space
+26.5045 	EXP 	text_7: autoDraw = False
+26.5045 	EXP 	text_10: autoDraw = False
+26.5045 	EXP 	polygon_26: autoDraw = True
+31.5037 	EXP 	polygon_26: autoDraw = False
+31.5037 	EXP 	polygon_27: autoDraw = True
+32.6716 	DATA 	Keypress: rshift
+35.5043 	EXP 	polygon_27: autoDraw = False
+35.5043 	EXP 	polygon_28: autoDraw = True
+36.2396 	DATA 	Keypress: lshift
+39.5056 	EXP 	polygon_28: autoDraw = False
+39.5056 	EXP 	polygon_29: autoDraw = True
+40.8452 	DATA 	Keypress: lshift
+40.8557 	EXP 	polygon_29: autoDraw = False
+40.8557 	EXP 	polygon_30: autoDraw = True
+47.8440 	EXP 	New trial (rep=1, index=0): None
+47.8605 	EXP 	polygon_30: autoDraw = False
+47.8605 	EXP 	polygon_26: autoDraw = True
+52.7285 	DATA 	Keypress: lshift
+52.8605 	EXP 	polygon_26: autoDraw = False
+52.8605 	EXP 	polygon_27: autoDraw = True
+53.7116 	DATA 	Keypress: rshift
+56.8621 	EXP 	polygon_27: autoDraw = False
+56.8621 	EXP 	polygon_28: autoDraw = True
+57.5954 	DATA 	Keypress: rshift
+60.8614 	EXP 	polygon_28: autoDraw = False
+60.8614 	EXP 	polygon_29: autoDraw = True
+61.7820 	DATA 	Keypress: lshift
+61.7957 	EXP 	polygon_29: autoDraw = False
+61.7957 	EXP 	polygon_30: autoDraw = True
+66.5816 	DATA 	Keypress: rshift
+68.7813 	EXP 	New trial (rep=2, index=0): None
+68.7974 	EXP 	polygon_30: autoDraw = False
+68.7974 	EXP 	polygon_26: autoDraw = True
+69.5312 	DATA 	Keypress: lshift
+73.7990 	EXP 	polygon_26: autoDraw = False
+73.7990 	EXP 	polygon_27: autoDraw = True
+74.3170 	DATA 	Keypress: rshift
+77.8003 	EXP 	polygon_27: autoDraw = False
+77.8003 	EXP 	polygon_28: autoDraw = True
+78.3852 	DATA 	Keypress: lshift
+81.8015 	EXP 	polygon_28: autoDraw = False
+81.8015 	EXP 	polygon_29: autoDraw = True
+82.2711 	DATA 	Keypress: lshift
+82.2849 	EXP 	polygon_29: autoDraw = False
+82.2849 	EXP 	polygon_30: autoDraw = True
+89.2704 	EXP 	New trial (rep=3, index=0): None
+89.2866 	EXP 	polygon_30: autoDraw = False
+89.2866 	EXP 	polygon_26: autoDraw = True
+92.0057 	DATA 	Keypress: lshift
+94.2882 	EXP 	polygon_26: autoDraw = False
+94.2882 	EXP 	polygon_27: autoDraw = True
+94.9051 	DATA 	Keypress: rshift
+98.2893 	EXP 	polygon_27: autoDraw = False
+98.2893 	EXP 	polygon_28: autoDraw = True
+98.8739 	DATA 	Keypress: rshift
+102.2907 	EXP 	polygon_28: autoDraw = False
+102.2907 	EXP 	polygon_29: autoDraw = True
+102.9101 	DATA 	Keypress: lshift
+102.9241 	EXP 	polygon_29: autoDraw = False
+102.9241 	EXP 	polygon_30: autoDraw = True
+109.9286 	EXP 	polygon_30: autoDraw = False
+109.9286 	EXP 	text: height = 0.07
+109.9286 	EXP 	text: height = 0.07
+109.9286 	EXP 	text: text = 'Calibration complete, press spacebar and await further instructions\n\n'
+109.9286 	EXP 	text: autoDraw = True
+112.7293 	DATA 	Keypress: escape
+113.6783 	EXP 	window1: mouseVisible = True

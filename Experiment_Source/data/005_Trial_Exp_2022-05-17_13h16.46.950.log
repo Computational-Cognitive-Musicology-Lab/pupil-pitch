@@ -1,0 +1,963 @@
+1.2788 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+172.3440 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7ff56859fbb0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7ff568130460>, multiSample=False, name='window1', numSamples=2, pos=[640.0, 360.0], screen=0, size=array([5120, 2880]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+172.3441 	EXP 	window1: mouseVisible = True
+172.3441 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+172.3442 	EXP 	window1: recordFrameIntervals = False
+172.5104 	EXP 	window1: recordFrameIntervals = True
+172.6939 	EXP 	Screen (0) actual frame rate measured at 60.02Hz
+172.6939 	EXP 	window1: recordFrameIntervals = False
+174.2103 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.029999999999999995, italic=False, languageStyle='LTR', name='text_6', opacity=1, ori=0.0, pos=array([0.  , 0.15]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+174.3436 	EXP 	window1: mouseVisible = True
+174.5943 	EXP 	Created text_8 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.029999999999999995, italic=False, languageStyle='LTR', name='text_8', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+174.6198 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.029999999999999995, italic=False, languageStyle='LTR', name='text_4', opacity=1, ori=0.0, pos=array([0. , 0.1]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+174.6738 	EXP 	window1: mouseVisible = True
+174.9444 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.0225, italic=False, languageStyle='LTR', name='text_7', opacity=1, ori=0.0, pos=array([0. , 0.2]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+175.5587 	EXP 	Sound sound_31 set volume 1.000
+175.5773 	EXP 	Created text_10 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.0225, italic=False, languageStyle='LTR', name='text_10', opacity=1, ori=0.0, pos=array([ 0.  , -0.25]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+175.7129 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image=str(...), interpolate=True, mask=None, maskParams=None, name='image', opacity=1, ori=0.0, pos=array([ 0.   , -0.075]), size=array([0.5  , 0.125]), texRes=128.0, units='height', win=Window(...))
+175.7151 	EXP 	Created polygon_26 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_26', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+175.7221 	EXP 	Sound sound_26 set volume 1.000
+175.7241 	EXP 	Created polygon_27 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_27', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+175.7253 	EXP 	Sound sound_27 set volume 1.000
+175.7275 	EXP 	Created polygon_28 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_28', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+175.7276 	EXP 	Sound sound_28 set volume 1.000
+175.7296 	EXP 	Created polygon_29 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_29', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+175.7301 	EXP 	Sound sound_29 set volume 1.000
+175.9631 	EXP 	Created polygon_30 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_30', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+175.9632 	EXP 	Sound sound_30 set volume 1.000
+175.9645 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+176.1994 	EXP 	Created polygon_31 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_31', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+178.5705 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=0.3, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+178.5713 	EXP 	Sound sound_1 set volume 1.000
+178.5733 	EXP 	Created polygon_3 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_3', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+178.5739 	EXP 	Sound sound_2 set volume 1.000
+178.5760 	EXP 	Created polygon_4 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_4', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+178.5761 	EXP 	Sound sound_3 set volume 1.000
+178.5783 	EXP 	Created polygon_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+178.8166 	EXP 	Sound sound_4 set volume 1.000
+178.8187 	EXP 	Created polygon_5 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_5', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+178.8187 	EXP 	Sound sound_5 set volume 1.000
+178.8613 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+179.1018 	EXP 	Created polygon_31 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_31', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+181.1136 	EXP 	Created polygon_6 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_6', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+181.1142 	EXP 	Sound sound_6 set volume 1.000
+181.1160 	EXP 	Created polygon_7 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_7', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+181.1164 	EXP 	Sound sound_7 set volume 1.000
+181.1184 	EXP 	Created polygon_8 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_8', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+181.1185 	EXP 	Sound sound_8 set volume 1.000
+181.1204 	EXP 	Created polygon_9 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_9', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+181.3548 	EXP 	Sound sound_9 set volume 1.000
+181.3571 	EXP 	Created polygon_24 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_24', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+181.3571 	EXP 	Sound sound_24 set volume 1.000
+181.3700 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+181.6138 	EXP 	Created polygon_31 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_31', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+183.6214 	EXP 	Created polygon_10 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_10', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+183.6220 	EXP 	Sound sound_10 set volume 1.000
+183.6241 	EXP 	Created polygon_11 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_11', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+183.6245 	EXP 	Sound sound_11 set volume 1.000
+183.6265 	EXP 	Created polygon_12 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_12', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+183.6266 	EXP 	Sound sound_12 set volume 1.000
+183.6292 	EXP 	Created polygon_13 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_13', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+183.8677 	EXP 	Sound sound_13 set volume 1.000
+183.8699 	EXP 	Created polygon_25 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_25', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+183.8699 	EXP 	Sound sound_25 set volume 1.000
+183.8822 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+184.1194 	EXP 	Created polygon_31 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_31', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+186.1251 	EXP 	Created polygon_14 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_14', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+186.1257 	EXP 	Sound sound_14 set volume 0.800
+186.1276 	EXP 	Created polygon_15 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_15', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+186.1282 	EXP 	Sound sound_15 set volume 1.000
+186.1303 	EXP 	Created polygon_16 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_16', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+186.1304 	EXP 	Sound sound_16 set volume 1.000
+186.1311 	EXP 	Sound sound_17 set volume 1.000
+186.1331 	EXP 	Created polygon_17 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_17', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+186.3735 	EXP 	Created polygon_18 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_18', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+186.3737 	EXP 	Sound sound_18 set volume 1.000
+186.3868 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+186.6324 	EXP 	Created polygon_31 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_31', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+188.6377 	EXP 	Created polygon_19 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_19', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+188.6383 	EXP 	Sound sound_19 set volume 1.000
+188.6405 	EXP 	Created polygon_20 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_20', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+188.6411 	EXP 	Sound sound_20 set volume 1.000
+188.6432 	EXP 	Created polygon_21 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_21', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+188.6433 	EXP 	Sound sound_21 set volume 1.000
+188.6454 	EXP 	Created polygon_22 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_22', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+188.6458 	EXP 	Sound sound_22 set volume 1.000
+188.8844 	EXP 	Created polygon_23 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon_23', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+188.8845 	EXP 	Sound sound_23 set volume 1.000
+188.8947 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+188.9103 	EXP 	text_6: autoDraw = True
+197.4373 	DATA 	Keypress: space
+197.4518 	EXP 	text_6: autoDraw = False
+197.4518 	EXP 	text_8: autoDraw = True
+202.7380 	DATA 	Keypress: space
+212.4552 	EXP 	text_8: autoDraw = False
+212.4552 	EXP 	text_4: autoDraw = True
+217.0327 	DATA 	Keypress: space
+217.0418 	EXP 	text_4: autoDraw = False
+217.0418 	EXP 	text_7: autoDraw = True
+217.0418 	EXP 	text_10: autoDraw = True
+217.0418 	EXP 	image: autoDraw = True
+272.3084 	EXP 	Created sequence: random, trialTypes=1, nReps=4, seed=None
+272.3086 	EXP 	New trial (rep=0, index=0): None
+272.3171 	DATA 	Keypress: space
+272.3244 	EXP 	text_7: autoDraw = False
+272.3244 	EXP 	text_10: autoDraw = False
+272.3244 	EXP 	image: autoDraw = False
+272.3244 	EXP 	polygon_26: autoDraw = True
+277.3137 	EXP 	polygon_26: autoDraw = False
+277.3137 	EXP 	polygon_26: autoDraw = False
+277.3137 	EXP 	polygon_27: autoDraw = True
+281.3265 	EXP 	polygon_27: autoDraw = False
+281.3265 	EXP 	polygon_28: autoDraw = True
+285.3267 	EXP 	polygon_28: autoDraw = False
+285.3267 	EXP 	polygon_29: autoDraw = True
+285.7632 	DATA 	Keypress: lshift
+285.7767 	EXP 	polygon_29: autoDraw = False
+285.7767 	EXP 	polygon_30: autoDraw = True
+292.7624 	EXP 	New trial (rep=1, index=0): None
+292.7784 	EXP 	polygon_30: autoDraw = False
+292.7784 	EXP 	polygon_26: autoDraw = True
+297.7799 	EXP 	polygon_26: autoDraw = False
+297.7799 	EXP 	polygon_27: autoDraw = True
+301.7811 	EXP 	polygon_27: autoDraw = False
+301.7811 	EXP 	polygon_28: autoDraw = True
+305.7825 	EXP 	polygon_28: autoDraw = False
+305.7825 	EXP 	polygon_29: autoDraw = True
+306.2516 	DATA 	Keypress: rshift
+306.2658 	EXP 	polygon_29: autoDraw = False
+306.2658 	EXP 	polygon_30: autoDraw = True
+313.2512 	EXP 	New trial (rep=2, index=0): None
+313.2676 	EXP 	polygon_30: autoDraw = False
+313.2676 	EXP 	polygon_26: autoDraw = True
+318.2688 	EXP 	polygon_26: autoDraw = False
+318.2688 	EXP 	polygon_27: autoDraw = True
+322.2706 	EXP 	polygon_27: autoDraw = False
+322.2706 	EXP 	polygon_28: autoDraw = True
+326.2716 	EXP 	polygon_28: autoDraw = False
+326.2716 	EXP 	polygon_29: autoDraw = True
+326.7420 	DATA 	Keypress: lshift
+326.7549 	EXP 	polygon_29: autoDraw = False
+326.7549 	EXP 	polygon_30: autoDraw = True
+333.7414 	EXP 	New trial (rep=3, index=0): None
+333.7469 	EXP 	polygon_30: autoDraw = False
+333.7469 	EXP 	polygon_26: autoDraw = True
+338.7587 	EXP 	polygon_26: autoDraw = False
+338.7587 	EXP 	polygon_27: autoDraw = True
+342.7594 	EXP 	polygon_27: autoDraw = False
+342.7594 	EXP 	polygon_28: autoDraw = True
+346.7614 	EXP 	polygon_28: autoDraw = False
+346.7614 	EXP 	polygon_29: autoDraw = True
+347.1335 	DATA 	Keypress: rshift
+347.1443 	EXP 	polygon_29: autoDraw = False
+347.1443 	EXP 	polygon_30: autoDraw = True
+354.1531 	EXP 	polygon_30: autoDraw = False
+354.1531 	EXP 	polygon_30: autoDraw = False
+354.1531 	EXP 	text: height = 0.07
+354.1531 	EXP 	text: height = 0.07
+354.1531 	EXP 	text: text = 'That concludes the practice block.\nYou can take some time to look away from the screen and relax your eyes.\n\nPlease press Spacebar to continue with the experiment.\n'
+354.1531 	EXP 	text: autoDraw = True
+364.4674 	DATA 	Keypress: space
+364.4822 	EXP 	text: autoDraw = False
+364.4822 	EXP 	polygon_31: autoDraw = True
+369.4673 	EXP 	Created sequence: sequential, trialTypes=1, nReps=11, seed=None
+369.4676 	EXP 	New trial (rep=0, index=0): None
+370.2264 	EXP 	polygon_31: autoDraw = False
+370.2264 	EXP 	polygon: autoDraw = True
+372.4765 	EXP 	polygon: autoDraw = False
+372.4765 	EXP 	polygon: autoDraw = False
+372.4765 	EXP 	polygon_3: autoDraw = True
+376.4779 	EXP 	polygon_3: autoDraw = False
+376.4779 	EXP 	polygon_4: autoDraw = True
+380.2379 	EXP 	polygon_4: autoDraw = False
+380.2379 	EXP 	polygon_2: autoDraw = True
+380.9449 	DATA 	Keypress: rshift
+380.9492 	EXP 	polygon_2: autoDraw = False
+380.9492 	EXP 	polygon_5: autoDraw = True
+389.4419 	EXP 	New trial (rep=1, index=0): None
+390.2000 	EXP 	polygon_5: autoDraw = False
+390.2000 	EXP 	polygon_5: autoDraw = False
+390.2000 	EXP 	polygon: autoDraw = True
+394.4499 	EXP 	polygon: autoDraw = False
+394.4499 	EXP 	polygon: autoDraw = False
+394.4499 	EXP 	polygon_3: autoDraw = True
+398.4659 	EXP 	polygon_3: autoDraw = False
+398.4659 	EXP 	polygon_4: autoDraw = True
+402.2100 	EXP 	polygon_4: autoDraw = False
+402.2100 	EXP 	polygon_2: autoDraw = True
+402.8488 	DATA 	Keypress: lshift
+402.8530 	EXP 	polygon_2: autoDraw = False
+402.8530 	EXP 	polygon_5: autoDraw = True
+409.3475 	EXP 	New trial (rep=2, index=0): None
+410.1061 	EXP 	polygon_5: autoDraw = False
+410.1061 	EXP 	polygon_5: autoDraw = False
+410.1061 	EXP 	polygon: autoDraw = True
+412.3536 	EXP 	polygon: autoDraw = False
+412.3536 	EXP 	polygon: autoDraw = False
+412.3536 	EXP 	polygon_3: autoDraw = True
+416.3543 	EXP 	polygon_3: autoDraw = False
+416.3543 	EXP 	polygon_4: autoDraw = True
+420.1148 	EXP 	polygon_4: autoDraw = False
+420.1148 	EXP 	polygon_2: autoDraw = True
+420.7382 	DATA 	Keypress: lshift
+420.7430 	EXP 	polygon_2: autoDraw = False
+420.7430 	EXP 	polygon_5: autoDraw = True
+429.2363 	EXP 	New trial (rep=3, index=0): None
+429.9961 	EXP 	polygon_5: autoDraw = False
+429.9961 	EXP 	polygon_5: autoDraw = False
+429.9961 	EXP 	polygon: autoDraw = True
+432.2429 	EXP 	polygon: autoDraw = False
+432.2429 	EXP 	polygon: autoDraw = False
+432.2429 	EXP 	polygon_3: autoDraw = True
+436.2445 	EXP 	polygon_3: autoDraw = False
+436.2445 	EXP 	polygon_4: autoDraw = True
+440.0038 	EXP 	polygon_4: autoDraw = False
+440.0038 	EXP 	polygon_2: autoDraw = True
+440.6098 	DATA 	Keypress: lshift
+440.6140 	EXP 	polygon_2: autoDraw = False
+440.6140 	EXP 	polygon_5: autoDraw = True
+450.1161 	EXP 	New trial (rep=4, index=0): None
+450.8763 	EXP 	polygon_5: autoDraw = False
+450.8763 	EXP 	polygon_5: autoDraw = False
+450.8763 	EXP 	polygon: autoDraw = True
+454.1165 	EXP 	polygon: autoDraw = False
+454.1165 	EXP 	polygon: autoDraw = False
+454.1165 	EXP 	polygon_3: autoDraw = True
+458.1328 	EXP 	polygon_3: autoDraw = False
+458.1328 	EXP 	polygon_4: autoDraw = True
+461.8772 	EXP 	polygon_4: autoDraw = False
+461.8772 	EXP 	polygon_2: autoDraw = True
+462.5993 	DATA 	Keypress: lshift
+462.6035 	EXP 	polygon_2: autoDraw = False
+462.6035 	EXP 	polygon_5: autoDraw = True
+469.1039 	EXP 	New trial (rep=5, index=0): None
+469.8692 	EXP 	polygon_5: autoDraw = False
+469.8692 	EXP 	polygon_5: autoDraw = False
+469.8692 	EXP 	polygon: autoDraw = True
+472.1214 	EXP 	polygon: autoDraw = False
+472.1214 	EXP 	polygon: autoDraw = False
+472.1214 	EXP 	polygon_3: autoDraw = True
+476.1222 	EXP 	polygon_3: autoDraw = False
+476.1222 	EXP 	polygon_4: autoDraw = True
+479.8821 	EXP 	polygon_4: autoDraw = False
+479.8821 	EXP 	polygon_2: autoDraw = True
+480.5367 	DATA 	Keypress: lshift
+480.5419 	EXP 	polygon_2: autoDraw = False
+480.5419 	EXP 	polygon_5: autoDraw = True
+491.0447 	EXP 	New trial (rep=6, index=0): None
+491.8050 	EXP 	polygon_5: autoDraw = False
+491.8050 	EXP 	polygon_5: autoDraw = False
+491.8050 	EXP 	polygon: autoDraw = True
+496.0628 	EXP 	polygon: autoDraw = False
+496.0628 	EXP 	polygon: autoDraw = False
+496.0628 	EXP 	polygon_3: autoDraw = True
+500.0631 	EXP 	polygon_3: autoDraw = False
+500.0631 	EXP 	polygon_4: autoDraw = True
+503.8224 	EXP 	polygon_4: autoDraw = False
+503.8224 	EXP 	polygon_2: autoDraw = True
+504.4447 	DATA 	Keypress: rshift
+504.4490 	EXP 	polygon_2: autoDraw = False
+504.4490 	EXP 	polygon_5: autoDraw = True
+514.9432 	EXP 	New trial (rep=7, index=0): None
+515.7141 	EXP 	polygon_5: autoDraw = False
+515.7141 	EXP 	polygon_5: autoDraw = False
+515.7141 	EXP 	polygon: autoDraw = True
+521.9683 	EXP 	polygon: autoDraw = False
+521.9683 	EXP 	polygon: autoDraw = False
+521.9683 	EXP 	polygon_3: autoDraw = True
+525.9689 	EXP 	polygon_3: autoDraw = False
+525.9689 	EXP 	polygon_4: autoDraw = True
+529.7303 	EXP 	polygon_4: autoDraw = False
+529.7303 	EXP 	polygon_2: autoDraw = True
+530.3863 	DATA 	Keypress: lshift
+530.3922 	EXP 	polygon_2: autoDraw = False
+530.3922 	EXP 	polygon_5: autoDraw = True
+539.8841 	EXP 	New trial (rep=8, index=0): None
+540.6471 	EXP 	polygon_5: autoDraw = False
+540.6471 	EXP 	polygon_5: autoDraw = False
+540.6471 	EXP 	polygon: autoDraw = True
+545.8930 	EXP 	polygon: autoDraw = False
+545.8930 	EXP 	polygon: autoDraw = False
+545.8930 	EXP 	polygon_3: autoDraw = True
+549.8993 	EXP 	polygon_3: autoDraw = False
+549.8993 	EXP 	polygon_4: autoDraw = True
+553.6534 	EXP 	polygon_4: autoDraw = False
+553.6534 	EXP 	polygon_2: autoDraw = True
+554.2765 	DATA 	Keypress: rshift
+554.2807 	EXP 	polygon_2: autoDraw = False
+554.2807 	EXP 	polygon_5: autoDraw = True
+563.7766 	EXP 	New trial (rep=9, index=0): None
+564.5355 	EXP 	polygon_5: autoDraw = False
+564.5355 	EXP 	polygon_5: autoDraw = False
+564.5355 	EXP 	polygon: autoDraw = True
+570.7825 	EXP 	polygon: autoDraw = False
+570.7825 	EXP 	polygon: autoDraw = False
+570.7825 	EXP 	polygon_3: autoDraw = True
+574.8019 	EXP 	polygon_3: autoDraw = False
+574.8019 	EXP 	polygon_4: autoDraw = True
+578.5438 	EXP 	polygon_4: autoDraw = False
+578.5438 	EXP 	polygon_2: autoDraw = True
+579.1990 	DATA 	Keypress: rshift
+579.2034 	EXP 	polygon_2: autoDraw = False
+579.2034 	EXP 	polygon_5: autoDraw = True
+588.7061 	EXP 	New trial (rep=10, index=0): None
+589.4690 	EXP 	polygon_5: autoDraw = False
+589.4690 	EXP 	polygon_5: autoDraw = False
+589.4690 	EXP 	polygon: autoDraw = True
+593.7252 	EXP 	polygon: autoDraw = False
+593.7252 	EXP 	polygon: autoDraw = False
+593.7252 	EXP 	polygon_3: autoDraw = True
+597.7430 	EXP 	polygon_3: autoDraw = False
+597.7430 	EXP 	polygon_4: autoDraw = True
+601.4842 	EXP 	polygon_4: autoDraw = False
+601.4842 	EXP 	polygon_2: autoDraw = True
+602.0221 	DATA 	Keypress: rshift
+602.0262 	EXP 	polygon_2: autoDraw = False
+602.0262 	EXP 	polygon_5: autoDraw = True
+609.5335 	EXP 	polygon_5: autoDraw = False
+609.5335 	EXP 	polygon_5: autoDraw = False
+609.5335 	EXP 	text_2: autoDraw = True
+625.8442 	DATA 	Keypress: space
+625.8586 	EXP 	text_2: autoDraw = False
+625.8586 	EXP 	polygon_31: autoDraw = True
+630.8431 	EXP 	Created sequence: sequential, trialTypes=1, nReps=11, seed=None
+630.8433 	EXP 	New trial (rep=0, index=0): None
+632.3517 	EXP 	polygon_31: autoDraw = False
+632.3517 	EXP 	polygon_6: autoDraw = True
+638.3523 	EXP 	polygon_6: autoDraw = False
+638.3523 	EXP 	polygon_6: autoDraw = False
+638.3523 	EXP 	polygon_7: autoDraw = True
+642.3545 	EXP 	polygon_7: autoDraw = False
+642.3545 	EXP 	polygon_8: autoDraw = True
+646.3586 	EXP 	polygon_8: autoDraw = False
+646.3586 	EXP 	polygon_9: autoDraw = True
+647.6527 	DATA 	Keypress: rshift
+647.6580 	EXP 	polygon_9: autoDraw = False
+647.6580 	EXP 	polygon_24: autoDraw = True
+656.1514 	EXP 	New trial (rep=1, index=0): None
+657.6642 	EXP 	polygon_24: autoDraw = False
+657.6642 	EXP 	polygon_24: autoDraw = False
+657.6642 	EXP 	polygon_6: autoDraw = True
+663.6598 	EXP 	polygon_6: autoDraw = False
+663.6598 	EXP 	polygon_6: autoDraw = False
+663.6598 	EXP 	polygon_7: autoDraw = True
+667.6602 	EXP 	polygon_7: autoDraw = False
+667.6602 	EXP 	polygon_8: autoDraw = True
+671.6615 	EXP 	polygon_8: autoDraw = False
+671.6615 	EXP 	polygon_9: autoDraw = True
+673.0437 	DATA 	Keypress: lshift
+673.0479 	EXP 	polygon_9: autoDraw = False
+673.0479 	EXP 	polygon_24: autoDraw = True
+682.5518 	EXP 	New trial (rep=2, index=0): None
+684.0613 	EXP 	polygon_24: autoDraw = False
+684.0613 	EXP 	polygon_24: autoDraw = False
+684.0613 	EXP 	polygon_6: autoDraw = True
+689.0660 	EXP 	polygon_6: autoDraw = False
+689.0660 	EXP 	polygon_6: autoDraw = False
+689.0660 	EXP 	polygon_7: autoDraw = True
+693.0706 	EXP 	polygon_7: autoDraw = False
+693.0706 	EXP 	polygon_8: autoDraw = True
+697.0689 	EXP 	polygon_8: autoDraw = False
+697.0689 	EXP 	polygon_9: autoDraw = True
+698.4344 	DATA 	Keypress: lshift
+698.4387 	EXP 	polygon_9: autoDraw = False
+698.4387 	EXP 	polygon_24: autoDraw = True
+707.9333 	EXP 	New trial (rep=3, index=0): None
+709.4541 	EXP 	polygon_24: autoDraw = False
+709.4541 	EXP 	polygon_24: autoDraw = False
+709.4541 	EXP 	polygon_6: autoDraw = True
+716.4597 	EXP 	polygon_6: autoDraw = False
+716.4597 	EXP 	polygon_6: autoDraw = False
+716.4597 	EXP 	polygon_7: autoDraw = True
+720.4594 	EXP 	polygon_7: autoDraw = False
+720.4594 	EXP 	polygon_8: autoDraw = True
+724.4631 	EXP 	polygon_8: autoDraw = False
+724.4631 	EXP 	polygon_9: autoDraw = True
+725.8405 	DATA 	Keypress: lshift
+725.8449 	EXP 	polygon_9: autoDraw = False
+725.8449 	EXP 	polygon_24: autoDraw = True
+732.3475 	EXP 	New trial (rep=4, index=0): None
+733.8607 	EXP 	polygon_24: autoDraw = False
+733.8607 	EXP 	polygon_24: autoDraw = False
+733.8607 	EXP 	polygon_6: autoDraw = True
+737.8660 	EXP 	polygon_6: autoDraw = False
+737.8660 	EXP 	polygon_6: autoDraw = False
+737.8660 	EXP 	polygon_7: autoDraw = True
+741.8821 	EXP 	polygon_7: autoDraw = False
+741.8821 	EXP 	polygon_8: autoDraw = True
+745.8825 	EXP 	polygon_8: autoDraw = False
+745.8825 	EXP 	polygon_9: autoDraw = True
+747.2131 	DATA 	Keypress: rshift
+747.2175 	EXP 	polygon_9: autoDraw = False
+747.2175 	EXP 	polygon_24: autoDraw = True
+755.7136 	EXP 	New trial (rep=5, index=0): None
+757.2220 	EXP 	polygon_24: autoDraw = False
+757.2220 	EXP 	polygon_24: autoDraw = False
+757.2220 	EXP 	polygon_6: autoDraw = True
+760.2205 	EXP 	polygon_6: autoDraw = False
+760.2205 	EXP 	polygon_6: autoDraw = False
+760.2205 	EXP 	polygon_7: autoDraw = True
+764.2206 	EXP 	polygon_7: autoDraw = False
+764.2206 	EXP 	polygon_8: autoDraw = True
+768.2224 	EXP 	polygon_8: autoDraw = False
+768.2224 	EXP 	polygon_9: autoDraw = True
+769.5036 	DATA 	Keypress: rshift
+769.5090 	EXP 	polygon_9: autoDraw = False
+769.5090 	EXP 	polygon_24: autoDraw = True
+779.0036 	EXP 	New trial (rep=6, index=0): None
+780.5113 	EXP 	polygon_24: autoDraw = False
+780.5113 	EXP 	polygon_24: autoDraw = False
+780.5113 	EXP 	polygon_6: autoDraw = True
+787.5120 	EXP 	polygon_6: autoDraw = False
+787.5120 	EXP 	polygon_6: autoDraw = False
+787.5120 	EXP 	polygon_7: autoDraw = True
+791.5145 	EXP 	polygon_7: autoDraw = False
+791.5145 	EXP 	polygon_8: autoDraw = True
+795.5150 	EXP 	polygon_8: autoDraw = False
+795.5150 	EXP 	polygon_9: autoDraw = True
+796.8146 	DATA 	Keypress: lshift
+796.8187 	EXP 	polygon_9: autoDraw = False
+796.8187 	EXP 	polygon_24: autoDraw = True
+804.3104 	EXP 	New trial (rep=7, index=0): None
+805.8218 	EXP 	polygon_24: autoDraw = False
+805.8218 	EXP 	polygon_24: autoDraw = False
+805.8218 	EXP 	polygon_6: autoDraw = True
+809.8176 	EXP 	polygon_6: autoDraw = False
+809.8176 	EXP 	polygon_6: autoDraw = False
+809.8176 	EXP 	polygon_7: autoDraw = True
+813.8193 	EXP 	polygon_7: autoDraw = False
+813.8193 	EXP 	polygon_8: autoDraw = True
+817.8200 	EXP 	polygon_8: autoDraw = False
+817.8200 	EXP 	polygon_9: autoDraw = True
+819.1689 	DATA 	Keypress: lshift
+819.1742 	EXP 	polygon_9: autoDraw = False
+819.1742 	EXP 	polygon_24: autoDraw = True
+826.6732 	EXP 	New trial (rep=8, index=0): None
+828.1803 	EXP 	polygon_24: autoDraw = False
+828.1803 	EXP 	polygon_24: autoDraw = False
+828.1803 	EXP 	polygon_6: autoDraw = True
+834.1765 	EXP 	polygon_6: autoDraw = False
+834.1765 	EXP 	polygon_6: autoDraw = False
+834.1765 	EXP 	polygon_7: autoDraw = True
+838.1765 	EXP 	polygon_7: autoDraw = False
+838.1765 	EXP 	polygon_8: autoDraw = True
+842.1763 	EXP 	polygon_8: autoDraw = False
+842.1763 	EXP 	polygon_9: autoDraw = True
+843.4585 	DATA 	Keypress: lshift
+843.4635 	EXP 	polygon_9: autoDraw = False
+843.4635 	EXP 	polygon_24: autoDraw = True
+851.9600 	EXP 	New trial (rep=9, index=0): None
+853.4766 	EXP 	polygon_24: autoDraw = False
+853.4766 	EXP 	polygon_24: autoDraw = False
+853.4766 	EXP 	polygon_6: autoDraw = True
+856.4823 	EXP 	polygon_6: autoDraw = False
+856.4823 	EXP 	polygon_6: autoDraw = False
+856.4823 	EXP 	polygon_7: autoDraw = True
+860.4837 	EXP 	polygon_7: autoDraw = False
+860.4837 	EXP 	polygon_8: autoDraw = True
+864.4828 	EXP 	polygon_8: autoDraw = False
+864.4828 	EXP 	polygon_9: autoDraw = True
+865.8490 	DATA 	Keypress: lshift
+865.8532 	EXP 	polygon_9: autoDraw = False
+865.8532 	EXP 	polygon_24: autoDraw = True
+874.3483 	EXP 	New trial (rep=10, index=0): None
+875.8596 	EXP 	polygon_24: autoDraw = False
+875.8596 	EXP 	polygon_24: autoDraw = False
+875.8596 	EXP 	polygon_6: autoDraw = True
+878.8546 	EXP 	polygon_6: autoDraw = False
+878.8546 	EXP 	polygon_6: autoDraw = False
+878.8546 	EXP 	polygon_7: autoDraw = True
+882.8559 	EXP 	polygon_7: autoDraw = False
+882.8559 	EXP 	polygon_8: autoDraw = True
+886.8559 	EXP 	polygon_8: autoDraw = False
+886.8559 	EXP 	polygon_9: autoDraw = True
+888.1930 	DATA 	Keypress: rshift
+888.1974 	EXP 	polygon_9: autoDraw = False
+888.1974 	EXP 	polygon_24: autoDraw = True
+896.6993 	EXP 	polygon_24: autoDraw = False
+896.6993 	EXP 	polygon_24: autoDraw = False
+896.6993 	EXP 	text_2: autoDraw = True
+1050.7325 	DATA 	Keypress: space
+1050.7505 	EXP 	text_2: autoDraw = False
+1050.7505 	EXP 	polygon_31: autoDraw = True
+1055.7321 	EXP 	Created sequence: sequential, trialTypes=1, nReps=11, seed=None
+1055.7323 	EXP 	New trial (rep=0, index=0): None
+1057.2463 	EXP 	polygon_31: autoDraw = False
+1057.2463 	EXP 	polygon_10: autoDraw = True
+1060.2428 	EXP 	polygon_10: autoDraw = False
+1060.2428 	EXP 	polygon_10: autoDraw = False
+1060.2428 	EXP 	polygon_11: autoDraw = True
+1064.2424 	EXP 	polygon_11: autoDraw = False
+1064.2424 	EXP 	polygon_12: autoDraw = True
+1068.2432 	EXP 	polygon_12: autoDraw = False
+1068.2432 	EXP 	polygon_13: autoDraw = True
+1069.5909 	DATA 	Keypress: rshift
+1069.5952 	EXP 	polygon_13: autoDraw = False
+1069.5952 	EXP 	polygon_25: autoDraw = True
+1079.0896 	EXP 	New trial (rep=1, index=0): None
+1080.5975 	EXP 	polygon_25: autoDraw = False
+1080.5975 	EXP 	polygon_25: autoDraw = False
+1080.5975 	EXP 	polygon_10: autoDraw = True
+1086.5997 	EXP 	polygon_10: autoDraw = False
+1086.5997 	EXP 	polygon_10: autoDraw = False
+1086.5997 	EXP 	polygon_11: autoDraw = True
+1090.6176 	EXP 	polygon_11: autoDraw = False
+1090.6176 	EXP 	polygon_12: autoDraw = True
+1094.6168 	EXP 	polygon_12: autoDraw = False
+1094.6168 	EXP 	polygon_13: autoDraw = True
+1095.9309 	DATA 	Keypress: lshift
+1095.9353 	EXP 	polygon_13: autoDraw = False
+1095.9353 	EXP 	polygon_25: autoDraw = True
+1104.4336 	EXP 	New trial (rep=2, index=0): None
+1105.9452 	EXP 	polygon_25: autoDraw = False
+1105.9452 	EXP 	polygon_25: autoDraw = False
+1105.9452 	EXP 	polygon_10: autoDraw = True
+1111.9376 	EXP 	polygon_10: autoDraw = False
+1111.9376 	EXP 	polygon_10: autoDraw = False
+1111.9376 	EXP 	polygon_11: autoDraw = True
+1115.9430 	EXP 	polygon_11: autoDraw = False
+1115.9430 	EXP 	polygon_12: autoDraw = True
+1119.9394 	EXP 	polygon_12: autoDraw = False
+1119.9394 	EXP 	polygon_13: autoDraw = True
+1121.2723 	DATA 	Keypress: lshift
+1121.2766 	EXP 	polygon_13: autoDraw = False
+1121.2766 	EXP 	polygon_25: autoDraw = True
+1131.7714 	EXP 	New trial (rep=3, index=0): None
+1133.2852 	EXP 	polygon_25: autoDraw = False
+1133.2852 	EXP 	polygon_25: autoDraw = False
+1133.2852 	EXP 	polygon_10: autoDraw = True
+1138.2787 	EXP 	polygon_10: autoDraw = False
+1138.2787 	EXP 	polygon_10: autoDraw = False
+1138.2787 	EXP 	polygon_11: autoDraw = True
+1142.2821 	EXP 	polygon_11: autoDraw = False
+1142.2821 	EXP 	polygon_12: autoDraw = True
+1146.2835 	EXP 	polygon_12: autoDraw = False
+1146.2835 	EXP 	polygon_13: autoDraw = True
+1147.6641 	DATA 	Keypress: rshift
+1147.6682 	EXP 	polygon_13: autoDraw = False
+1147.6682 	EXP 	polygon_25: autoDraw = True
+1155.1606 	EXP 	New trial (rep=4, index=0): None
+1156.6770 	EXP 	polygon_25: autoDraw = False
+1156.6770 	EXP 	polygon_25: autoDraw = False
+1156.6770 	EXP 	polygon_10: autoDraw = True
+1161.6693 	EXP 	polygon_10: autoDraw = False
+1161.6693 	EXP 	polygon_10: autoDraw = False
+1161.6693 	EXP 	polygon_11: autoDraw = True
+1165.6756 	EXP 	polygon_11: autoDraw = False
+1165.6756 	EXP 	polygon_12: autoDraw = True
+1169.6709 	EXP 	polygon_12: autoDraw = False
+1169.6709 	EXP 	polygon_13: autoDraw = True
+1171.0023 	DATA 	Keypress: lshift
+1171.0078 	EXP 	polygon_13: autoDraw = False
+1171.0078 	EXP 	polygon_25: autoDraw = True
+1179.5072 	EXP 	New trial (rep=5, index=0): None
+1181.0213 	EXP 	polygon_25: autoDraw = False
+1181.0213 	EXP 	polygon_25: autoDraw = False
+1181.0213 	EXP 	polygon_10: autoDraw = True
+1185.0269 	EXP 	polygon_10: autoDraw = False
+1185.0269 	EXP 	polygon_10: autoDraw = False
+1185.0269 	EXP 	polygon_11: autoDraw = True
+1189.0271 	EXP 	polygon_11: autoDraw = False
+1189.0271 	EXP 	polygon_12: autoDraw = True
+1193.0276 	EXP 	polygon_12: autoDraw = False
+1193.0276 	EXP 	polygon_13: autoDraw = True
+1194.3267 	DATA 	Keypress: lshift
+1194.3308 	EXP 	polygon_13: autoDraw = False
+1194.3308 	EXP 	polygon_25: autoDraw = True
+1202.8287 	EXP 	New trial (rep=6, index=0): None
+1204.3383 	EXP 	polygon_25: autoDraw = False
+1204.3383 	EXP 	polygon_25: autoDraw = False
+1204.3383 	EXP 	polygon_10: autoDraw = True
+1207.3335 	EXP 	polygon_10: autoDraw = False
+1207.3335 	EXP 	polygon_10: autoDraw = False
+1207.3335 	EXP 	polygon_11: autoDraw = True
+1211.3338 	EXP 	polygon_11: autoDraw = False
+1211.3338 	EXP 	polygon_12: autoDraw = True
+1215.3331 	EXP 	polygon_12: autoDraw = False
+1215.3331 	EXP 	polygon_13: autoDraw = True
+1216.6651 	DATA 	Keypress: rshift
+1216.6694 	EXP 	polygon_13: autoDraw = False
+1216.6694 	EXP 	polygon_25: autoDraw = True
+1224.1675 	EXP 	New trial (rep=7, index=0): None
+1225.6747 	EXP 	polygon_25: autoDraw = False
+1225.6747 	EXP 	polygon_25: autoDraw = False
+1225.6747 	EXP 	polygon_10: autoDraw = True
+1232.6731 	EXP 	polygon_10: autoDraw = False
+1232.6731 	EXP 	polygon_10: autoDraw = False
+1232.6731 	EXP 	polygon_11: autoDraw = True
+1236.6762 	EXP 	polygon_11: autoDraw = False
+1236.6762 	EXP 	polygon_12: autoDraw = True
+1240.6757 	EXP 	polygon_12: autoDraw = False
+1240.6757 	EXP 	polygon_13: autoDraw = True
+1242.0070 	DATA 	Keypress: lshift
+1242.0112 	EXP 	polygon_13: autoDraw = False
+1242.0112 	EXP 	polygon_25: autoDraw = True
+1250.5055 	EXP 	New trial (rep=8, index=0): None
+1252.0205 	EXP 	polygon_25: autoDraw = False
+1252.0205 	EXP 	polygon_25: autoDraw = False
+1252.0205 	EXP 	polygon_10: autoDraw = True
+1258.0153 	EXP 	polygon_10: autoDraw = False
+1258.0153 	EXP 	polygon_10: autoDraw = False
+1258.0153 	EXP 	polygon_11: autoDraw = True
+1262.0155 	EXP 	polygon_11: autoDraw = False
+1262.0155 	EXP 	polygon_12: autoDraw = True
+1266.0160 	EXP 	polygon_12: autoDraw = False
+1266.0160 	EXP 	polygon_13: autoDraw = True
+1267.3325 	DATA 	Keypress: lshift
+1267.3369 	EXP 	polygon_13: autoDraw = False
+1267.3369 	EXP 	polygon_25: autoDraw = True
+1273.8299 	EXP 	New trial (rep=9, index=0): None
+1275.3414 	EXP 	polygon_25: autoDraw = False
+1275.3414 	EXP 	polygon_25: autoDraw = False
+1275.3414 	EXP 	polygon_10: autoDraw = True
+1282.3376 	EXP 	polygon_10: autoDraw = False
+1282.3376 	EXP 	polygon_10: autoDraw = False
+1282.3376 	EXP 	polygon_11: autoDraw = True
+1286.3425 	EXP 	polygon_11: autoDraw = False
+1286.3425 	EXP 	polygon_12: autoDraw = True
+1290.3397 	EXP 	polygon_12: autoDraw = False
+1290.3397 	EXP 	polygon_13: autoDraw = True
+1291.7041 	DATA 	Keypress: rshift
+1291.7098 	EXP 	polygon_13: autoDraw = False
+1291.7098 	EXP 	polygon_25: autoDraw = True
+1299.2105 	EXP 	New trial (rep=10, index=0): None
+1300.7169 	EXP 	polygon_25: autoDraw = False
+1300.7169 	EXP 	polygon_25: autoDraw = False
+1300.7169 	EXP 	polygon_10: autoDraw = True
+1304.7108 	EXP 	polygon_10: autoDraw = False
+1304.7108 	EXP 	polygon_10: autoDraw = False
+1304.7108 	EXP 	polygon_11: autoDraw = True
+1308.7098 	EXP 	polygon_11: autoDraw = False
+1308.7098 	EXP 	polygon_12: autoDraw = True
+1312.7118 	EXP 	polygon_12: autoDraw = False
+1312.7118 	EXP 	polygon_13: autoDraw = True
+1314.0269 	DATA 	Keypress: lshift
+1314.0310 	EXP 	polygon_13: autoDraw = False
+1314.0310 	EXP 	polygon_25: autoDraw = True
+1322.5387 	EXP 	polygon_25: autoDraw = False
+1322.5387 	EXP 	polygon_25: autoDraw = False
+1322.5387 	EXP 	text_2: autoDraw = True
+1331.7471 	DATA 	Keypress: space
+1331.7611 	EXP 	text_2: autoDraw = False
+1331.7611 	EXP 	polygon_31: autoDraw = True
+1336.7465 	EXP 	Created sequence: sequential, trialTypes=1, nReps=11, seed=None
+1336.7467 	EXP 	New trial (rep=0, index=0): None
+1338.2575 	EXP 	polygon_31: autoDraw = False
+1338.2575 	EXP 	polygon_14: autoDraw = True
+1344.2553 	EXP 	polygon_14: autoDraw = False
+1344.2553 	EXP 	polygon_14: autoDraw = False
+1344.2553 	EXP 	polygon_15: autoDraw = True
+1348.2566 	EXP 	polygon_15: autoDraw = False
+1348.2566 	EXP 	polygon_16: autoDraw = True
+1352.2562 	EXP 	polygon_16: autoDraw = False
+1352.2562 	EXP 	polygon_17: autoDraw = True
+1353.6217 	DATA 	Keypress: rshift
+1353.6264 	EXP 	polygon_17: autoDraw = False
+1353.6264 	EXP 	polygon_18: autoDraw = True
+1363.1214 	EXP 	New trial (rep=1, index=0): None
+1364.6283 	EXP 	polygon_18: autoDraw = False
+1364.6283 	EXP 	polygon_18: autoDraw = False
+1364.6283 	EXP 	polygon_14: autoDraw = True
+1370.6299 	EXP 	polygon_14: autoDraw = False
+1370.6299 	EXP 	polygon_14: autoDraw = False
+1370.6299 	EXP 	polygon_15: autoDraw = True
+1374.6318 	EXP 	polygon_15: autoDraw = False
+1374.6318 	EXP 	polygon_16: autoDraw = True
+1378.6317 	EXP 	polygon_16: autoDraw = False
+1378.6317 	EXP 	polygon_17: autoDraw = True
+1379.9624 	DATA 	Keypress: lshift
+1379.9667 	EXP 	polygon_17: autoDraw = False
+1379.9667 	EXP 	polygon_18: autoDraw = True
+1386.4710 	EXP 	New trial (rep=2, index=0): None
+1387.9791 	EXP 	polygon_18: autoDraw = False
+1387.9791 	EXP 	polygon_18: autoDraw = False
+1387.9791 	EXP 	polygon_14: autoDraw = True
+1391.9693 	EXP 	polygon_14: autoDraw = False
+1391.9693 	EXP 	polygon_14: autoDraw = False
+1391.9693 	EXP 	polygon_15: autoDraw = True
+1395.9757 	EXP 	polygon_15: autoDraw = False
+1395.9757 	EXP 	polygon_16: autoDraw = True
+1399.9695 	EXP 	polygon_16: autoDraw = False
+1399.9695 	EXP 	polygon_17: autoDraw = True
+1401.3708 	DATA 	Keypress: rshift
+1401.3763 	EXP 	polygon_17: autoDraw = False
+1401.3763 	EXP 	polygon_18: autoDraw = True
+1409.8746 	EXP 	New trial (rep=3, index=0): None
+1411.3879 	EXP 	polygon_18: autoDraw = False
+1411.3879 	EXP 	polygon_18: autoDraw = False
+1411.3879 	EXP 	polygon_14: autoDraw = True
+1417.3933 	EXP 	polygon_14: autoDraw = False
+1417.3933 	EXP 	polygon_14: autoDraw = False
+1417.3933 	EXP 	polygon_15: autoDraw = True
+1421.4123 	EXP 	polygon_15: autoDraw = False
+1421.4123 	EXP 	polygon_16: autoDraw = True
+1425.4041 	EXP 	polygon_16: autoDraw = False
+1425.4041 	EXP 	polygon_17: autoDraw = True
+1427.0929 	DATA 	Keypress: lshift
+1427.0972 	EXP 	polygon_17: autoDraw = False
+1427.0972 	EXP 	polygon_18: autoDraw = True
+1434.5943 	EXP 	New trial (rep=4, index=0): None
+1436.1014 	EXP 	polygon_18: autoDraw = False
+1436.1014 	EXP 	polygon_18: autoDraw = False
+1436.1014 	EXP 	polygon_14: autoDraw = True
+1439.1000 	EXP 	polygon_14: autoDraw = False
+1439.1000 	EXP 	polygon_14: autoDraw = False
+1439.1000 	EXP 	polygon_15: autoDraw = True
+1443.1002 	EXP 	polygon_15: autoDraw = False
+1443.1002 	EXP 	polygon_16: autoDraw = True
+1447.1007 	EXP 	polygon_16: autoDraw = False
+1447.1007 	EXP 	polygon_17: autoDraw = True
+1448.9488 	DATA 	Keypress: lshift
+1448.9541 	EXP 	polygon_17: autoDraw = False
+1448.9541 	EXP 	polygon_18: autoDraw = True
+1455.4476 	EXP 	New trial (rep=5, index=0): None
+1456.9546 	EXP 	polygon_18: autoDraw = False
+1456.9546 	EXP 	polygon_18: autoDraw = False
+1456.9546 	EXP 	polygon_14: autoDraw = True
+1459.9550 	EXP 	polygon_14: autoDraw = False
+1459.9550 	EXP 	polygon_14: autoDraw = False
+1459.9550 	EXP 	polygon_15: autoDraw = True
+1463.9555 	EXP 	polygon_15: autoDraw = False
+1463.9555 	EXP 	polygon_16: autoDraw = True
+1467.9555 	EXP 	polygon_16: autoDraw = False
+1467.9555 	EXP 	polygon_17: autoDraw = True
+1469.2219 	DATA 	Keypress: lshift
+1469.2263 	EXP 	polygon_17: autoDraw = False
+1469.2263 	EXP 	polygon_18: autoDraw = True
+1476.7214 	EXP 	New trial (rep=6, index=0): None
+1478.2355 	EXP 	polygon_18: autoDraw = False
+1478.2355 	EXP 	polygon_18: autoDraw = False
+1478.2355 	EXP 	polygon_14: autoDraw = True
+1484.2285 	EXP 	polygon_14: autoDraw = False
+1484.2285 	EXP 	polygon_14: autoDraw = False
+1484.2285 	EXP 	polygon_15: autoDraw = True
+1488.2311 	EXP 	polygon_15: autoDraw = False
+1488.2311 	EXP 	polygon_16: autoDraw = True
+1492.2332 	EXP 	polygon_16: autoDraw = False
+1492.2332 	EXP 	polygon_17: autoDraw = True
+1493.5140 	DATA 	Keypress: lshift
+1493.5183 	EXP 	polygon_17: autoDraw = False
+1493.5183 	EXP 	polygon_18: autoDraw = True
+1502.0127 	EXP 	New trial (rep=7, index=0): None
+1503.5207 	EXP 	polygon_18: autoDraw = False
+1503.5207 	EXP 	polygon_18: autoDraw = False
+1503.5207 	EXP 	polygon_14: autoDraw = True
+1509.5192 	EXP 	polygon_14: autoDraw = False
+1509.5192 	EXP 	polygon_14: autoDraw = False
+1509.5192 	EXP 	polygon_15: autoDraw = True
+1513.5263 	EXP 	polygon_15: autoDraw = False
+1513.5263 	EXP 	polygon_16: autoDraw = True
+1517.5217 	EXP 	polygon_16: autoDraw = False
+1517.5217 	EXP 	polygon_17: autoDraw = True
+1518.8540 	DATA 	Keypress: lshift
+1518.8598 	EXP 	polygon_17: autoDraw = False
+1518.8598 	EXP 	polygon_18: autoDraw = True
+1527.3533 	EXP 	New trial (rep=8, index=0): None
+1528.8621 	EXP 	polygon_18: autoDraw = False
+1528.8621 	EXP 	polygon_18: autoDraw = False
+1528.8621 	EXP 	polygon_14: autoDraw = True
+1531.8619 	EXP 	polygon_14: autoDraw = False
+1531.8619 	EXP 	polygon_14: autoDraw = False
+1531.8619 	EXP 	polygon_15: autoDraw = True
+1535.8639 	EXP 	polygon_15: autoDraw = False
+1535.8639 	EXP 	polygon_16: autoDraw = True
+1539.8775 	EXP 	polygon_16: autoDraw = False
+1539.8775 	EXP 	polygon_17: autoDraw = True
+1541.2255 	DATA 	Keypress: rshift
+1541.2298 	EXP 	polygon_17: autoDraw = False
+1541.2298 	EXP 	polygon_18: autoDraw = True
+1550.7143 	EXP 	New trial (rep=9, index=0): None
+1552.2225 	EXP 	polygon_18: autoDraw = False
+1552.2225 	EXP 	polygon_18: autoDraw = False
+1552.2225 	EXP 	polygon_14: autoDraw = True
+1555.2180 	EXP 	polygon_14: autoDraw = False
+1555.2180 	EXP 	polygon_14: autoDraw = False
+1555.2180 	EXP 	polygon_15: autoDraw = True
+1559.2341 	EXP 	polygon_15: autoDraw = False
+1559.2341 	EXP 	polygon_16: autoDraw = True
+1563.2191 	EXP 	polygon_16: autoDraw = False
+1563.2191 	EXP 	polygon_17: autoDraw = True
+1564.6328 	DATA 	Keypress: rshift
+1564.6370 	EXP 	polygon_17: autoDraw = False
+1564.6370 	EXP 	polygon_18: autoDraw = True
+1572.1316 	EXP 	New trial (rep=10, index=0): None
+1573.6575 	EXP 	polygon_18: autoDraw = False
+1573.6575 	EXP 	polygon_18: autoDraw = False
+1573.6575 	EXP 	polygon_14: autoDraw = True
+1576.6553 	EXP 	polygon_14: autoDraw = False
+1576.6553 	EXP 	polygon_14: autoDraw = False
+1576.6553 	EXP 	polygon_15: autoDraw = True
+1580.6719 	EXP 	polygon_15: autoDraw = False
+1580.6719 	EXP 	polygon_16: autoDraw = True
+1584.6591 	EXP 	polygon_16: autoDraw = False
+1584.6591 	EXP 	polygon_17: autoDraw = True
+1586.0548 	DATA 	Keypress: rshift
+1586.0596 	EXP 	polygon_17: autoDraw = False
+1586.0596 	EXP 	polygon_18: autoDraw = True
+1596.5605 	EXP 	polygon_18: autoDraw = False
+1596.5605 	EXP 	polygon_18: autoDraw = False
+1596.5605 	EXP 	text_2: autoDraw = True
+1621.2133 	DATA 	Keypress: space
+1621.2278 	EXP 	text_2: autoDraw = False
+1621.2278 	EXP 	polygon_31: autoDraw = True
+1626.2131 	EXP 	Created sequence: sequential, trialTypes=1, nReps=11, seed=None
+1626.2133 	EXP 	New trial (rep=0, index=0): None
+1627.7209 	EXP 	polygon_31: autoDraw = False
+1627.7209 	EXP 	polygon_19: autoDraw = True
+1630.7285 	EXP 	polygon_19: autoDraw = False
+1630.7285 	EXP 	polygon_19: autoDraw = False
+1630.7285 	EXP 	polygon_20: autoDraw = True
+1634.7387 	EXP 	polygon_20: autoDraw = False
+1634.7387 	EXP 	polygon_21: autoDraw = True
+1638.7392 	EXP 	polygon_21: autoDraw = False
+1638.7392 	EXP 	polygon_22: autoDraw = True
+1640.0693 	DATA 	Keypress: lshift
+1640.0747 	EXP 	polygon_22: autoDraw = False
+1640.0747 	EXP 	polygon_23: autoDraw = True
+1648.5619 	EXP 	New trial (rep=1, index=0): None
+1650.0686 	EXP 	polygon_23: autoDraw = False
+1650.0686 	EXP 	polygon_23: autoDraw = False
+1650.0686 	EXP 	polygon_19: autoDraw = True
+1657.0631 	EXP 	polygon_19: autoDraw = False
+1657.0631 	EXP 	polygon_19: autoDraw = False
+1657.0631 	EXP 	polygon_20: autoDraw = True
+1661.0794 	EXP 	polygon_20: autoDraw = False
+1661.0794 	EXP 	polygon_21: autoDraw = True
+1665.0647 	EXP 	polygon_21: autoDraw = False
+1665.0647 	EXP 	polygon_22: autoDraw = True
+1666.3791 	DATA 	Keypress: rshift
+1666.3835 	EXP 	polygon_22: autoDraw = False
+1666.3835 	EXP 	polygon_23: autoDraw = True
+1674.8802 	EXP 	New trial (rep=2, index=0): None
+1676.3872 	EXP 	polygon_23: autoDraw = False
+1676.3872 	EXP 	polygon_23: autoDraw = False
+1676.3872 	EXP 	polygon_19: autoDraw = True
+1683.3858 	EXP 	polygon_19: autoDraw = False
+1683.3858 	EXP 	polygon_19: autoDraw = False
+1683.3858 	EXP 	polygon_20: autoDraw = True
+1687.3885 	EXP 	polygon_20: autoDraw = False
+1687.3885 	EXP 	polygon_21: autoDraw = True
+1691.3864 	EXP 	polygon_21: autoDraw = False
+1691.3864 	EXP 	polygon_22: autoDraw = True
+1692.7011 	DATA 	Keypress: rshift
+1692.7053 	EXP 	polygon_22: autoDraw = False
+1692.7053 	EXP 	polygon_23: autoDraw = True
+1701.2030 	EXP 	New trial (rep=3, index=0): None
+1702.7102 	EXP 	polygon_23: autoDraw = False
+1702.7102 	EXP 	polygon_23: autoDraw = False
+1702.7102 	EXP 	polygon_19: autoDraw = True
+1705.7092 	EXP 	polygon_19: autoDraw = False
+1705.7092 	EXP 	polygon_19: autoDraw = False
+1705.7092 	EXP 	polygon_20: autoDraw = True
+1709.7098 	EXP 	polygon_20: autoDraw = False
+1709.7098 	EXP 	polygon_21: autoDraw = True
+1713.7102 	EXP 	polygon_21: autoDraw = False
+1713.7102 	EXP 	polygon_22: autoDraw = True
+1714.9574 	DATA 	Keypress: rshift
+1714.9629 	EXP 	polygon_22: autoDraw = False
+1714.9629 	EXP 	polygon_23: autoDraw = True
+1721.4608 	EXP 	New trial (rep=4, index=0): None
+1722.9790 	EXP 	polygon_23: autoDraw = False
+1722.9790 	EXP 	polygon_23: autoDraw = False
+1722.9790 	EXP 	polygon_19: autoDraw = True
+1729.9856 	EXP 	polygon_19: autoDraw = False
+1729.9856 	EXP 	polygon_19: autoDraw = False
+1729.9856 	EXP 	polygon_20: autoDraw = True
+1733.9836 	EXP 	polygon_20: autoDraw = False
+1733.9836 	EXP 	polygon_21: autoDraw = True
+1737.9835 	EXP 	polygon_21: autoDraw = False
+1737.9835 	EXP 	polygon_22: autoDraw = True
+1739.4174 	DATA 	Keypress: lshift
+1739.4238 	EXP 	polygon_22: autoDraw = False
+1739.4238 	EXP 	polygon_23: autoDraw = True
+1749.9322 	EXP 	New trial (rep=5, index=0): None
+1751.4399 	EXP 	polygon_23: autoDraw = False
+1751.4399 	EXP 	polygon_23: autoDraw = False
+1751.4399 	EXP 	polygon_19: autoDraw = True
+1755.4391 	EXP 	polygon_19: autoDraw = False
+1755.4391 	EXP 	polygon_19: autoDraw = False
+1755.4391 	EXP 	polygon_20: autoDraw = True
+1759.4423 	EXP 	polygon_20: autoDraw = False
+1759.4423 	EXP 	polygon_21: autoDraw = True
+1763.4430 	EXP 	polygon_21: autoDraw = False
+1763.4430 	EXP 	polygon_22: autoDraw = True
+1764.8083 	DATA 	Keypress: lshift
+1764.8126 	EXP 	polygon_22: autoDraw = False
+1764.8126 	EXP 	polygon_23: autoDraw = True
+1771.3058 	EXP 	New trial (rep=6, index=0): None
+1772.8194 	EXP 	polygon_23: autoDraw = False
+1772.8194 	EXP 	polygon_23: autoDraw = False
+1772.8194 	EXP 	polygon_19: autoDraw = True
+1779.8151 	EXP 	polygon_19: autoDraw = False
+1779.8151 	EXP 	polygon_19: autoDraw = False
+1779.8151 	EXP 	polygon_20: autoDraw = True
+1783.8161 	EXP 	polygon_20: autoDraw = False
+1783.8161 	EXP 	polygon_21: autoDraw = True
+1787.8160 	EXP 	polygon_21: autoDraw = False
+1787.8160 	EXP 	polygon_22: autoDraw = True
+1789.2313 	DATA 	Keypress: lshift
+1789.2356 	EXP 	polygon_22: autoDraw = False
+1789.2356 	EXP 	polygon_23: autoDraw = True
+1797.7371 	EXP 	New trial (rep=7, index=0): None
+1799.2456 	EXP 	polygon_23: autoDraw = False
+1799.2456 	EXP 	polygon_23: autoDraw = False
+1799.2456 	EXP 	polygon_19: autoDraw = True
+1806.2376 	EXP 	polygon_19: autoDraw = False
+1806.2376 	EXP 	polygon_19: autoDraw = False
+1806.2376 	EXP 	polygon_20: autoDraw = True
+1810.2385 	EXP 	polygon_20: autoDraw = False
+1810.2385 	EXP 	polygon_21: autoDraw = True
+1814.2397 	EXP 	polygon_21: autoDraw = False
+1814.2397 	EXP 	polygon_22: autoDraw = True
+1815.7054 	DATA 	Keypress: lshift
+1815.7098 	EXP 	polygon_22: autoDraw = False
+1815.7098 	EXP 	polygon_23: autoDraw = True
+1826.2050 	EXP 	New trial (rep=8, index=0): None
+1827.7142 	EXP 	polygon_23: autoDraw = False
+1827.7142 	EXP 	polygon_23: autoDraw = False
+1827.7142 	EXP 	polygon_19: autoDraw = True
+1834.7132 	EXP 	polygon_19: autoDraw = False
+1834.7132 	EXP 	polygon_19: autoDraw = False
+1834.7132 	EXP 	polygon_20: autoDraw = True
+1838.7175 	EXP 	polygon_20: autoDraw = False
+1838.7175 	EXP 	polygon_21: autoDraw = True
+1842.7155 	EXP 	polygon_21: autoDraw = False
+1842.7155 	EXP 	polygon_22: autoDraw = True
+1844.0144 	DATA 	Keypress: lshift
+1844.0187 	EXP 	polygon_22: autoDraw = False
+1844.0187 	EXP 	polygon_23: autoDraw = True
+1853.5124 	EXP 	New trial (rep=9, index=0): None
+1855.0201 	EXP 	polygon_23: autoDraw = False
+1855.0201 	EXP 	polygon_23: autoDraw = False
+1855.0201 	EXP 	polygon_19: autoDraw = True
+1862.0212 	EXP 	polygon_19: autoDraw = False
+1862.0212 	EXP 	polygon_19: autoDraw = False
+1862.0212 	EXP 	polygon_20: autoDraw = True
+1866.0226 	EXP 	polygon_20: autoDraw = False
+1866.0226 	EXP 	polygon_21: autoDraw = True
+1870.0222 	EXP 	polygon_21: autoDraw = False
+1870.0222 	EXP 	polygon_22: autoDraw = True
+1871.3534 	DATA 	Keypress: rshift
+1871.3587 	EXP 	polygon_22: autoDraw = False
+1871.3587 	EXP 	polygon_23: autoDraw = True
+1880.8599 	EXP 	New trial (rep=10, index=0): None
+1882.3755 	EXP 	polygon_23: autoDraw = False
+1882.3755 	EXP 	polygon_23: autoDraw = False
+1882.3755 	EXP 	polygon_19: autoDraw = True
+1885.3772 	EXP 	polygon_19: autoDraw = False
+1885.3772 	EXP 	polygon_19: autoDraw = False
+1885.3772 	EXP 	polygon_20: autoDraw = True
+1889.3773 	EXP 	polygon_20: autoDraw = False
+1889.3773 	EXP 	polygon_21: autoDraw = True
+1893.3808 	EXP 	polygon_21: autoDraw = False
+1893.3808 	EXP 	polygon_22: autoDraw = True
+1894.7441 	DATA 	Keypress: lshift
+1894.7483 	EXP 	polygon_22: autoDraw = False
+1894.7483 	EXP 	polygon_23: autoDraw = True
+1905.2387 	EXP 	polygon_23: autoDraw = False
+1905.2387 	EXP 	polygon_23: autoDraw = False
+1905.2387 	EXP 	text_3: autoDraw = True
+1913.4139 	DATA 	Keypress: space
+1915.2452 	EXP 	text_3: autoDraw = False
+1915.2452 	EXP 	text_3: autoDraw = False
+1915.8051 	EXP 	window1: mouseVisible = True

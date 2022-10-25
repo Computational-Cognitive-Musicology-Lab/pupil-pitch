@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2022.1.2">
+  <Settings>
+    <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="{'participant': '', 'session': '001'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="list" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="[2560, 1440]" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="PupilTest" valType="str" updates="None" name="expName"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="PsychToolbox" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="exp" valType="code" updates="None" name="logging level"/>
+    <Param val="('MIDDLE_BUTTON',)" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <TextComponent name="text">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="10" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Recording Test" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <CodeComponent name="code">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="init">
+      <CodeComponent name="	">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="import zmq&amp;#10;import msgpack as serializer&amp;#10;&amp;#10;from time import sleep, time&amp;#10;&amp;#10;# Setup zmq context and remote helper&amp;#10;ctx = zmq.Context()&amp;#10;pupil_remote = zmq.Socket(ctx, zmq.REQ)&amp;#10;pupil_remote.connect('tcp://127.0.0.1:50020')&amp;#10;&amp;#10;pupil_remote.send_string(&quot;PUB_PORT&quot;)&amp;#10;pub_port = pupil_remote.recv_string()&amp;#10;pub_socket = zmq.Socket(ctx, zmq.PUB)&amp;#10;pub_socket.connect(&quot;tcp://127.0.0.1:&quot; + str(pub_port))&amp;#10;def notify(notification):&amp;#10;    &quot;&quot;&quot;Sends ``notification`` to Pupil Remote&quot;&quot;&quot;&amp;#10;    topic = &quot;notify.&quot; + notification[&quot;subject&quot;]&amp;#10;    payload = serializer.dumps(notification, use_bin_type=True)&amp;#10;    pupil_remote.send_string(topic, flags=zmq.SNDMORE)&amp;#10;    pupil_remote.send(payload)&amp;#10;    return pupil_remote.recv_string()&amp;#10;&amp;#10;def send_trigger(trigger):&amp;#10;    payload = serializer.dumps(trigger, use_bin_type=True)&amp;#10;    pub_socket.send_string(trigger[&quot;topic&quot;], flags=zmq.SNDMORE)&amp;#10;    pub_socket.send(payload)&amp;#10;def new_trigger(label, duration):&amp;#10;    return {&amp;#10;    &quot;topic&quot;: &quot;annotation&quot;,&amp;#10;    &quot;label&quot;: label,&amp;#10;    &quot;timestamp&quot;: time_fn(),&amp;#10;    &quot;duration&quot;: duration,&amp;#10;    }&amp;#10;time_fn = core.monotonicClock.getTime&amp;#10;&amp;#10;# set pupil's time to psychopy time&amp;#10;pupil_remote.send_string(&quot;T &quot; + str(time_fn()))&amp;#10;print(pupil_remote.recv_string())&amp;#10;sleep(2.)&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="import * as zmq from 'zmq';&amp;#10;import * as serializer from 'msgpack';&amp;#10;import {sleep, time} from 'time';&amp;#10;var ctx, pub_port, pub_socket, pupil_remote, time_fn;&amp;#10;ctx = new zmq.Context();&amp;#10;pupil_remote = new zmq.Socket(ctx, zmq.REQ);&amp;#10;pupil_remote.connect(&quot;tcp://127.0.0.1:50020&quot;);&amp;#10;pupil_remote.send_string(&quot;PUB_PORT&quot;);&amp;#10;pub_port = pupil_remote.recv_string();&amp;#10;pub_socket = new zmq.Socket(ctx, zmq.PUB);&amp;#10;pub_socket.connect((&quot;tcp://127.0.0.1:&quot; + pub_port.toString()));&amp;#10;function notify(notification) {&amp;#10;    /* Sends ``notification`` to Pupil Remote */&amp;#10;    var payload, topic;&amp;#10;    topic = (&quot;notify.&quot; + notification[&quot;subject&quot;]);&amp;#10;    payload = serializer.dumps(notification, {&quot;use_bin_type&quot;: true});&amp;#10;    pupil_remote.send_string(topic, {&quot;flags&quot;: zmq.SNDMORE});&amp;#10;    pupil_remote.send(payload);&amp;#10;    return pupil_remote.recv_string();&amp;#10;}&amp;#10;function send_trigger(trigger) {&amp;#10;    var payload;&amp;#10;    payload = serializer.dumps(trigger, {&quot;use_bin_type&quot;: true});&amp;#10;    pub_socket.send_string(trigger[&quot;topic&quot;], {&quot;flags&quot;: zmq.SNDMORE});&amp;#10;    pub_socket.send(payload);&amp;#10;}&amp;#10;function new_trigger(label, duration) {&amp;#10;    return {&quot;topic&quot;: &quot;annotation&quot;, &quot;label&quot;: label, &quot;timestamp&quot;: time_fn(), &quot;duration&quot;: duration};&amp;#10;}&amp;#10;time_fn = core.monotonicClock.getTime;&amp;#10;pupil_remote.send_string((&quot;T &quot; + time_fn().toString()));&amp;#10;console.log(pupil_remote.recv_string());&amp;#10;sleep(2.0);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="time_fn = core.monotonicClock.getTime;&amp;#10;name = expInfo[&quot;participant&quot;];&amp;#10;rstring = (&quot;R &quot; + name.toString());&amp;#10;pupil_remote.send_string(rstring);&amp;#10;console.log(pupil_remote.recv_string());&amp;#10;sleep(0.25);&amp;#10;label = &quot;start_of_experiment&quot;;&amp;#10;duration = 0.0;&amp;#10;minimal_trigger = new_trigger(label, duration);&amp;#10;send_trigger(minimal_trigger);&amp;#10;sleep(0.25);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="time_fn = core.monotonicClock.getTime&amp;#10;name = expInfo['participant']&amp;#10;rstring ='R '+ str(name) &amp;#10;pupil_remote.send_string(rstring)&amp;#10;print(pupil_remote.recv_string())&amp;#10;sleep(0.25)&amp;#10;label = &quot;start_of_experiment&quot;&amp;#10;duration = 0.&amp;#10;minimal_trigger = new_trigger(label, duration)&amp;#10;send_trigger(minimal_trigger)&amp;#10;sleep(0.25)" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="	" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="stoprecording">
+      <CodeComponent name="code_3">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="time_fn = core.monotonicClock.getTime;&amp;#10;label = &quot;End_of_Block&quot;;&amp;#10;duration = 0.0;&amp;#10;minimal_trigger = new_trigger(label, duration);&amp;#10;send_trigger(minimal_trigger);&amp;#10;sleep(2.0);&amp;#10;pupil_remote.send_string(&quot;r&quot;);&amp;#10;console.log(pupil_remote.recv_string());&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="time_fn = core.monotonicClock.getTime&amp;#10;label = &quot;End_of_Block&quot;&amp;#10;duration = 0.&amp;#10;minimal_trigger = new_trigger(label, duration)&amp;#10;send_trigger(minimal_trigger)&amp;#10;sleep(2.)&amp;#10;pupil_remote.send_string('r')&amp;#10;print(pupil_remote.recv_string())" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_3" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="init"/>
+    <Routine name="trial"/>
+    <Routine name="stoprecording"/>
+  </Flow>
+</PsychoPy2experiment>
