@@ -18,6 +18,31 @@ https://docs.pupil-labs.com/core/
 ### Pupil Labs integration
 Python scripts with examples to integrate Psychopy functionality and pupil-labs software can be found in the `Pupil-labs` folder of this repository.
 
+### Experiment Data and Analysis Script 
+All of the experiment data is found in the ExperimentData folder.
++-- ExperimentData
+    +-- Replication
+        +--1
+          +--Block1
+            +--Trial1
+            .
+            .
+            .
+    +-- Replication-Variation
+        +--1
+          +--Block1
+            +--Trial1
+            .
+            .
+            .
+            .
+
+Within each folder you will find the 'ExperimentSource.txt,' a textfile that holds all of the experiment and trial metadata; and the 'ParticipantData.txt' that holds all the participant trial responses and metadata(non-identifiable). 
+The main dataframes with all of the data is named 'main_replication_wbaseline.csv' & 'main_replication_variation_wbaseline.csv'.
+
+#### Analysis
+ All the analysis script for extraction of pupil data from the videos and the creation of the dataframes is found in the 'DataAnalysis' folder.
+
 ### Things to keep in mind
 - Ensure the pupil capture software is open and running before running an experiment
 - Run the world view lens calibration before the experiment begins for a participant 
