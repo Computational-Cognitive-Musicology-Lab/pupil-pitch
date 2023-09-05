@@ -1,0 +1,90 @@
+---
+title: "Analysiswstats"
+output: html_document
+date: "2023-05-05"
+---
+
+```{r setup, include=FALSE}
+main <- read.csv("/Users/noelalben/Downloads/main_replication_wbaseline.csv")
+main <- subset(main, select = -(X0th.time))
+#main <- subset(main, !grepl("_[45]$", X))
+
+# drop rows with 'reject'
+main <- subset(main, "X3s.pre.ready"!='REJECT')
+colnames(main)[23] <- "Response" #simplify 2nd-last col name
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+# Examine plot first: makes vals look identical when looking at raw (matches N.S. result below)
+#plot(1, main$X1s.pre.ready[!is.na(main$X1s.pre.ready)], xlim=c(1,2))
+#plot(2, main$X1s.post.ready[!is.na(main$X1s.post.ready)], add=TRUE)
+
+# paired t-test on raw, averaged values as in the original paper:
+
+df <- read.csv(file = '/Users/noelalben/Downloads/main_editreplication_wbaseline.csv',stringsAsFactors = FALSE)
+df <- df[df$X3s.pre.ready != 'REJECT', ] # Remove all the rejected trials 
+df <- df %>% select(-ends_with('time')) #Removing 0th time as it does not help us
+df <- subset(df, !grepl("_[45]$", X))
+df <- subset(df, !(Participant %in% c(6, 11)))
+#df <- subset(df, !grepl("[13 14]$", Participant))
+df[df == ""] <- NA
+main <-df
+x <- main %>% group_by(Participant) %>% summarize(pre_means = mean(X1s.pre.ready, na.rm=T)) 
+y <- main %>% group_by(Participant) %>% summarize(post_means = mean(X1s.post.ready, na.rm=T)) 
+res <- t.test(x=x$pre_means, y=y$post_means, paired = TRUE, alternative = "two.sided") # N.S.
+
+# same paired t-test as it *should* be done across all trials
+x <- (main$X1s.pre.ready - main$Baseline)
+y <- (main$X1s.post.ready - main$Baseline)
+res <- t.test(x=x, y=y, paired = TRUE, alternative = "two.sided") # still N.S. (matches plot; diff from original result)
+
+
+# TEST 3: response following standard vs response following comparison when they are the same frequency (1s post in each case)
+# paired t-test on raw, averaged values (presumed test in original paper): #df = 9
+# note tried both 1s-post and 2s-post
+x <- main[main$Comparison.Hertz == 850,] %>% group_by(Participant) %>% summarize(poststand_means = mean(X2s.post.standard, na.rm=T)) 
+y <- main[main$Comparison.Hertz == 850,] %>% group_by(Participant) %>% summarize(postcomp_means = mean(X2s.post.comp, na.rm=T)) 
+res1 <- t.test(x=x$poststand_means, y=y$postcomp_means, paired = TRUE, alternative = "two.sided") # N.S.(diff from original result)
+
+# same paired t-test as it *should* be done using all trials (df = 58)
+same <- subset(main, Comparison.Hertz == 850)
+res <- t.test(x = same$X2s.post.standard, y = same$X2s.post.comp, paired=TRUE, alternative = "greater") # significant only at 2s.post
+
+# TEST 4: Quadratic regression comparing 2s response curve with frequency value
+# this is NOT matching the original df: F-statistic: 3.715 on 2 and 645 DF,  p-value: 0.02489
+main2 <- main # so as to leave the factor variables alone in the original...
+main2$Comparison.Hertz <- as.numeric(as.character(main$Comparison.Hertz)) - 850
+hz <- unique(main$Comparison.Hertz)
+main$x2sdiff <- main$X2s.post.comp - main$at.comparison
+model <- lm(x2sdiff ~ I(Comparison.Hertz^2), data = main) # 1 df
+model <- lm(x2sdiff ~ Comparison.Hertz + I(Comparison.Hertz^2), data = main)
+
+plot(x2sdiff ~ as.numeric(as.character(Comparison.Hertz)), data = main2, 
+     ylim = c(-.5,.7))
+
+x <- -30:30
+points(x,.12917147 + (x^2) * -.00007821, type='l')
+# gets closer to original df if we collapse across participants first (one val per participant per Hz val)
+x <- main2 %>% group_by(Participant, Comparison.Hertz) %>% summarize(diff_means = mean(x2sdiff, na.rm=T))
+model <- lm(diff_means ~ Comparison.Hertz + I(Comparison.Hertz^2), data = x) # not sure if these are doing the same...
+model <- lm(diff_means ~  I(Comparison.Hertz^2), data = x) # to get 1 df for numerator we need only one predictor...
+
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
