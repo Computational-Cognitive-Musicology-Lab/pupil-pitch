@@ -20,19 +20,21 @@ Python scripts with examples to integrate Psychopy functionality and pupil-labs 
 
 ### Experiment Data and Analysis Script 
 All of the experiment data is found in the ExperimentData folder.
-├── ExperimentData
-│   ├── Replication
-│   │   ├── 1
-│   │   │   ├── Block1
-│   │   │   │   ├── Trial1
-│   │   │   │   └── ...
-│   ├── Replication-Variation
-│   │   ├── 1
-│   │   │   ├── Block1
-│   │   │   │   ├── Trial1
-│   │   │   │   └── ...
-│   │   │   └── ...
 
+- ExperimentData
+    - Replication
+        - 1
+            - Block1
+                - Trial1
+                - ...
+    - Replication-Variation
+        - 1
+            - Block1
+                - Trial1
+                - ...
+                - .
+                - .
+                - .
 
 
 Within each folder you will find the 'ExperimentSource.txt,' a textfile that holds all of the experiment and trial metadata; and the 'ParticipantData.txt' that holds all the participant trial responses and metadata(non-identifiable). 
