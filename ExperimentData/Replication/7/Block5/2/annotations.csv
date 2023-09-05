@@ -1,0 +1,8 @@
+,index,timestamp,label,duration
+0,4,1500.4222537489998,start_of_experiment,0.0
+1,12,1500.6731209369998,Ready_Tone,0.0
+2,221,1507.669319632,Reference_tone,0.0
+3,340,1511.6697448449995,comparison_tone,0.0
+4,459,1515.67287413,Answe_tone,0.0
+5,516,1517.556242629,feedback_tone,0.0
+6,784,1526.5570101350002,End_of_Trial,0.0
