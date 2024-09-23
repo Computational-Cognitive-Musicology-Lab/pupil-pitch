@@ -4,6 +4,9 @@ This repository holds code and resources for a replication study conducted to us
 ![Flow Diagram](https://raw.githubusercontent.com/Computational-Cognitive-Musicology-Lab/pupil-pitch/main/images/TrialDiagram.png)
  
  ### Requirements
+
+Relevant documentation for the device and supplementary software can be found here: https://docs.pupil-labs.com/core/developer/
+
  To run this experiment kindly ensure:
 -   You have Python 3.7+ and ensure all the dependencies in `requirements.txt` are satisfied 
  ```python
