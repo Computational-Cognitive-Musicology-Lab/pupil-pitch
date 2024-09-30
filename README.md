@@ -7,6 +7,9 @@ This repository holds code and resources for a replication study conducted to us
 
 Relevant documentation for the device and supplementary software can be found here: https://docs.pupil-labs.com/core/developer/
 
+If you have issues with connectivity and device drivers, OS dependent troubleshooting can be found here: https://docs.pupil-labs.com/core/software/pupil-capture/
+
+
  To run this experiment kindly ensure:
 -   You have Python 3.7+ and ensure all the dependencies in `requirements.txt` are satisfied 
  ```python
